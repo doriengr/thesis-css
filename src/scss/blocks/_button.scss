@@ -2,7 +2,8 @@
   grid-column: 2/8;
   display: block;
   background-color: $color-extra-light;
-  border: 1px solid $color-dark;
+  color: $color-green;
+  border: 1px solid $color-brown;
   padding: $spacing-10 $spacing-15;
   max-width: max-content;
   max-height: max-content;
@@ -11,7 +12,7 @@
   @include transition;
 
   &:hover {
-    background-color: $color-dark;
+    background-color: $color-brown;
     color: $color-extra-light;
   }
 
@@ -25,4 +26,5 @@
 .button__text {
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }

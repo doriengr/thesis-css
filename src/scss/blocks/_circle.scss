@@ -8,7 +8,7 @@
     width: $spacing-80;
     height: $spacing-80;
     border-radius: 100%;
-    border: 1px solid $color-red;
+    border: $height-line solid $color-brown;
   }
 
   @media (min-width: $screen-large) {
