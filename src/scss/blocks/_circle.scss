@@ -9,6 +9,7 @@
     height: $spacing-80;
     border-radius: 100%;
     border: $height-line solid $color-brown;
+    z-index: $z-index-standard;
   }
 
   @media (min-width: $screen-large) {
@@ -24,7 +25,6 @@
     position: absolute;
     top: -$spacing-40;
     left: -$spacing-40;
-    z-index: $z-index-high;
   }
 
   @media (min-width: $screen-large) {
@@ -40,7 +40,6 @@
     position: absolute;
     top: -$spacing-40;
     right: -$spacing-40;
-    z-index: $z-index-high;
   }
 
   @media (min-width: $screen-large) {
@@ -55,7 +54,6 @@
     position: absolute;
     bottom: -$spacing-40;
     right: -$spacing-40;
-    z-index: $z-index-high;
   }
 
   @media (min-width: $screen-large) {

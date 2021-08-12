@@ -13,6 +13,10 @@
 
   @media (min-width: $screen-large) {
     margin-top: 0;
+
+    &::after {
+      height: 40%;
+    }
   }
 }
 
