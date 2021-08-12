@@ -1,0 +1,67 @@
+.circle {
+  position: relative;
+}
+
+.circle--after {
+  &::after {
+    content: '';
+    width: $spacing-80;
+    height: $spacing-80;
+    border-radius: 100%;
+    border: 1px solid $color-red;
+  }
+
+  @media (min-width: $screen-large) {
+    &::after {
+      width: $spacing-200;
+      height: $spacing-200;
+    }
+  }
+}
+
+.circle--top-left {
+  &::after {
+    position: absolute;
+    top: -$spacing-40;
+    left: -$spacing-40;
+    z-index: $z-index-high;
+  }
+
+  @media (min-width: $screen-large) {
+    &::after {
+      top: -$spacing-100;
+      left: -$spacing-100;
+    }
+  }
+}
+
+.circle--top-right {
+  &::after {
+    position: absolute;
+    top: -$spacing-40;
+    right: -$spacing-40;
+    z-index: $z-index-high;
+  }
+
+  @media (min-width: $screen-large) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.circle--bottom-right {
+  &::after {
+    position: absolute;
+    bottom: -$spacing-40;
+    right: -$spacing-40;
+    z-index: $z-index-high;
+  }
+
+  @media (min-width: $screen-large) {
+    &::after {
+      bottom: -$spacing-100;
+      right: -$spacing-100;
+    }
+  }
+}

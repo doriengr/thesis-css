@@ -1,0 +1,77 @@
+.headline {
+  @include font-ivypresto-tight;
+  @include spacing-bottom;
+}
+
+.headline--largest {
+  grid-column: 4/8;
+  font-size: $font-size-largest;
+  color: $color-dark;
+  font-weight: 300;
+  max-width: $max-width-448;
+  align-self: center;
+
+  @media (min-width: $screen-small) {
+    font-size: $font-size-huge;
+    align-self: flex-start;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $screen-middle) {
+    font-size: $font-size-huger;
+    padding-top: $spacing-25;
+  }
+
+  @media (min-width: $screen-large) {
+    grid-column: 4/7;
+    font-size: $font-size-hugest;
+    max-width: $max-width-640;
+  }
+}
+
+.headline--large {
+  grid-column: 2/8;
+  font-size: $font-size-larger;
+
+  @media (min-width: $screen-small) {
+    font-size: $font-size-largest;
+  }
+
+  @media (min-width: $screen-middle) {
+    font-size: $font-size-huge;
+  }
+
+  @media (min-width: $screen-large) {
+    font-size: $font-size-huger;
+  }
+}
+
+.headline--center {
+  text-align: center;
+}
+
+.headline--small {
+  font-size: $font-size-large;
+
+  @media (min-width: $screen-small) {
+    font-size: $font-size-larger;
+  }
+
+  @media (min-width: $screen-middle) {
+    font-size: $font-size-largest;
+  }
+
+  @media (min-width: $screen-large) {
+    font-size: $font-size-huge;
+  }
+}
+
+.headline--with-line {
+  grid-column: none;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.headline--red {
+  color: $color-red;
+}

@@ -1,0 +1,37 @@
+.socialmedia {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  align-self: end;
+}
+
+.socialmedia--mobile {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing-25;
+}
+
+.socialmedia--grid {
+  @media (min-width: $screen-large) {
+    grid-column: 3/4;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.socialmedia__link {
+  margin: 0 $spacing-10;
+
+  @include transition;
+
+  &:hover {
+    transform: scale($transform-scale);
+    opacity: 65%;
+  }
+}
+
+.socialmedia__link-inner {
+  display: block;
+  height: $spacing-15;
+}

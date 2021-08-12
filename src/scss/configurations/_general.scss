@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-extra-light;
+  color: $color-dark;
+  font-family: $font-family-standard;
+  font-size: $font-size-mobile;
+  letter-spacing: $letter-spacing-standard;
+  line-height: $line-height-standard;
+}
+
+@media (min-width: $screen-larger) {
+  body {
+    font-size: $font-size-desktop;
+  }
+}
+
+main {
+  margin-top: $spacing-50;
+}
+
+@media (min-width: $screen-middle) {
+  main {
+    margin-top: $spacing-60;
+  }
+}
+
+@media (min-width: $screen-large) {
+  main {
+    margin-top: $spacing-100;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+::selection {
+  background-color: $color-light;
+}

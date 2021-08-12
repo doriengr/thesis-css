@@ -1,0 +1,56 @@
+.text {
+  grid-column: 2/8;
+  position: relative;
+}
+
+.text--history-large {
+  margin-top: $spacing-25;
+
+  @media (min-width: $screen-large) {
+    grid-column: 4/8;
+    grid-row: 2/3;
+    margin: 0 0 0 15%;
+    align-self: center;
+  }
+
+  @media (min-width: $screen-larger) {
+    grid-column: 5/8;
+    margin: 0;
+  }
+}
+
+.text--history-small {
+  @media (min-width: $screen-large) {
+    grid-column: 6/8;
+    grid-row: 3/4;
+    align-self: end;
+  }
+
+  @media (min-width: $screen-larger) {
+    margin-left: $spacing-50;
+  }
+}
+
+.text__inner {
+  margin: $spacing-15 0;
+}
+
+.text--philosophy {
+  @media (min-width: $screen-large) {
+    grid-column: 2/5;
+  }
+}
+
+.text--philosophy-green {
+  grid-column: 1/-1;
+  padding: $spacing-25 $grid-spacing-outside;
+  margin-top: $spacing-25;
+  background-color: $color-light;
+
+  @media (min-width: $screen-large) {
+    grid-column: 6/9;
+    grid-row: 3/5;
+    padding: $spacing-25 ($grid-spacing-outside * 2);
+    margin-top: $spacing-50;
+  }
+}

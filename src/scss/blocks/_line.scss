@@ -1,0 +1,37 @@
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line--grid {
+  grid-column: 2/8;
+
+  @include spacing-bottom;
+
+  @media (min-width: $screen-huger) {
+    grid-column: 1/8;
+  }
+}
+
+.line__inner {
+  width: 100%;
+  height: $height-line;
+  background-color: $color-red;
+}
+
+.line__inner--left {
+  margin-right: $spacing-20;
+}
+
+.line__inner--right {
+  margin-left: $spacing-20;
+}
+
+.line__inner--hidden {
+  display: none;
+
+  @media (min-width: $screen-large) {
+    display: block;
+  }
+}

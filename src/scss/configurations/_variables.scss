@@ -1,0 +1,78 @@
+$color-extra-light: #faf9f7;
+$color-light: #e7e4db;
+$color-brown: #b3a898;
+$color-red: #9d887a;
+$color-green: #8e8b7c;
+$color-dark: #5f6053;
+
+$font-family-headline: 'ivypresto-display';
+$font-family-standard: 'adobe-caslon-pro';
+$font-family-span: 'montserrat';
+
+$font-size-smallest: 0.625rem;
+$font-size-smaller: 0.75rem;
+$font-size-small: 0.875rem;
+$font-size-base: 1rem;
+$font-size-large: 1.125rem;
+$font-size-larger: 1.25rem;
+$font-size-largest: 1.875rem;
+$font-size-huge: 2.188rem;
+$font-size-huger: 3.125rem;
+$font-size-hugest: 4.375rem;
+
+$font-size-mobile: var(--font-size-smaller);
+$font-size-desktop: var(--font-size-large);
+
+$spacing-0: 0;
+$spacing-5: 0.313rem;
+$spacing-10: 0.625rem;
+$spacing-15: 0.938rem;
+$spacing-20: 1.25rem;
+$spacing-25: 1.563rem;
+$spacing-40: 2.5rem;
+$spacing-50: 3.125rem;
+$spacing-60: 3.75rem;
+$spacing-80: 5rem;
+$spacing-100: 6.25rem;
+$spacing-120: 7.5rem;
+$spacing-160: 10rem;
+$spacing-200: 12.5rem;
+$spacing-240: 15rem;
+$spacing-300: 18.75rem;
+$spacing-384: 24rem;
+
+$grid-spacing-outside: 6%;
+$grid-spacing-y-mobile: $spacing-80;
+$grid-spacing-y-desktop: $spacing-120;
+
+$height-line: 2px;
+
+$letter-spacing-wide: 0.15em;
+$letter-spacing-standard: 0.12em;
+$letter-spacing-tight: 0.05em;
+
+$line-height-standard: 1.5;
+$line-height-tight: 1.2;
+
+$max-width-448: 28rem;
+$max-width-608: 38rem;
+$max-width-640: 40rem;
+$max-width-880: 55rem;
+
+$screen-small: 640px;
+$screen-middle: 768px;
+$screen-large: 1024px;
+$screen-larger: 1280px;
+$screen-huge: 1440px;
+$screen-huger: 1650px;
+
+$z-index-lowest: -1;
+$z-index-standard: 0;
+$z-index-low: 10;
+$z-index-high: 50;
+
+$transition-type: all;
+$transition-duration: 300ms;
+$transition-function: ease-in-out;
+
+$transform-scale: 105%;

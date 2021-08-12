@@ -1,0 +1,15 @@
+@import './node_modules/minireset.css/minireset.sass',
+  'configurations/fonts',
+  'configurations/variables',
+  'configurations/general',
+  'configurations/mixins';
+@import 'blocks/button',
+  'blocks/circle',
+  'blocks/clippath',
+  'blocks/container',
+  'blocks/header',
+  'blocks/headline',
+  'blocks/hero',
+  'blocks/navigation',
+  'blocks/origin',
+  'blocks/socialmedia';

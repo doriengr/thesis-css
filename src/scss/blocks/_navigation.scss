@@ -1,0 +1,148 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  min-height: 23.5rem;
+  width: 100vw;
+  background-color: $color-brown;
+  z-index: $z-index-high;
+  padding: 0 $grid-spacing-outside;
+  overflow-y: scroll;
+
+  @media (min-width: $screen-large) {
+    background-color: transparent;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    overflow-y: hidden;
+    grid-column: 1/2;
+    grid-row: 1;
+    align-self: end;
+  }
+}
+
+.navigation__close {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $spacing-5;
+  cursor: pointer;
+  z-index: $z-index-low;
+
+  @include transition;
+
+  &:hover {
+    opacity: 65%;
+  }
+
+  > .navigation__close-line {
+    width: $spacing-25;
+    height: $height-line;
+    background-color: $color-extra-light;
+    margin-top: $spacing-20;
+    position: absolute;
+  }
+
+  > .navigation__close-line:first-of-type {
+    transform: rotate(45deg);
+  }
+
+  > .navigation__close-line:last-of-type {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $screen-middle) {
+    margin-top: $spacing-15;
+  }
+
+  @media (min-width: $screen-large) {
+    display: none;
+  }
+}
+
+.navigation__wrapper {
+  height: 100%;
+  position: relative;
+
+  @media (min-width: $screen-large) {
+    height: $spacing-20;
+  }
+}
+
+.navigation__logo-wrapper {
+  display: block;
+  margin-bottom: $spacing-50;
+  opacity: 65%;
+  position: absolute;
+  top: 28%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+
+  @include transition;
+
+  &:hover {
+    opacity: 100%;
+    transform: scale($transform-scale);
+  }
+
+  @media (min-width: $screen-large) {
+    display: none;
+  }
+}
+
+.navigation__logo {
+  width: $spacing-120;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  width: 100%;
+  color: $color-extra-light;
+  font-family: $font-family-span;
+  font-size: $font-size-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+
+  > .navigation__list-item > a {
+    margin-bottom: $spacing-20;
+    cursor: pointer;
+    text-transform: lowercase;
+    display: block;
+    color: $color-extra-light;
+
+    @include transition;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  @media (min-width: $screen-large) {
+    color: $color-dark;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: $font-size-smallest;
+
+    > .navigation__list-item > a {
+      margin: 0 $spacing-15 0 0;
+      color: $color-green;
+
+      &:hover {
+        color: $color-dark;
+      }
+    }
+  }
+}

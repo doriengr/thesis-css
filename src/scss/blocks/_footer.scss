@@ -1,0 +1,116 @@
+.footer {
+  padding-top: $spacing-20;
+  color: $color-extra-light;
+  position: relative;
+  z-index: $z-index-standard;
+
+  &::before {
+    content: '';
+    background-image: url('/src/images/pattern-small.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -$spacing-20;
+    z-index: $z-index-lowest;
+  }
+
+  @media (min-width: $screen-small) {
+    padding-top: $spacing-40;
+  }
+
+  @media (min-width: $screen-large) {
+    &::before {
+      background-image: url('/src/images/pattern-large.svg');
+      width: 85%;
+      right: 0;
+      top: 0;
+      max-width: $max-width-880;
+    }
+  }
+}
+
+.footer__wrapper {
+  grid-column: 1/-1;
+  background-color: $color-green;
+  padding: $spacing-60 $grid-spacing-outside $spacing-40 $grid-spacing-outside;
+
+  @media (min-width: $screen-large) {
+    grid-column: 1/7;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: $spacing-120;
+
+  @include transition();
+
+  &:hover {
+    transform: scale($transform-scale);
+    opacity: 65%;
+  }
+}
+
+.footer__description {
+  margin: $spacing-15 0;
+  font-size: $font-size-small;
+
+  @media (min-width: $screen-large) {
+    max-width: $max-width-640;
+  }
+}
+
+.footer__navigation {
+  @media (min-width: $screen-large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__navigation-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-20 $spacing-15;
+  font-family: $font-family-span;
+  text-transform: lowercase;
+  font-size: $font-size-smaller;
+  margin-top: $spacing-25;
+
+  > .footer__navigation-item {
+    text-align: right;
+  }
+
+  > .footer__navigation-item:nth-child(2n) {
+    text-align: left;
+  }
+
+  @media (min-width: $screen-small) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: $max-width-448;
+    margin: $spacing-25 auto 0 auto;
+
+    > .footer__navigation-item {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $screen-large) {
+    margin: $spacing-25 0 0 0;
+  }
+}
+
+.footer__navigation-item-link {
+  display: block;
+  color: $color-extra-light;
+  transition: $transition-type $transition-duration $transition-function;
+
+  &:hover {
+    color: $color-dark;
+  }
+}

@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-index-low;
+  background-color: rgba($color-extra-light, 0.8);
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-15 0;
+  border-bottom: 1px solid $color-brown;
+
+  @media (min-width: $screen-middle) and (max-width: $screen-large) {
+    padding: $spacing-25 0;
+  }
+
+  @media (min-width: $screen-large) {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 1fr;
+  }
+}
+
+.header__input {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.header__logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  @include transition;
+
+  &:hover {
+    transform: scale($transform-scale);
+    opacity: 60%;
+  }
+
+  @media (min-width: $screen-large) {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__logo-icon {
+  height: $spacing-20;
+  padding-right: $spacing-10;
+
+  @media (min-width: $screen-large) {
+    height: $spacing-40;
+    padding: 0 0 $spacing-10 0;
+  }
+}
+
+.header__logo-title {
+  font-size: $font-size-smallest;
+  font-weight: 500;
+  color: $color-brown;
+
+  @include font-montserrat-wide;
+
+  @media (min-width: $screen-large) {
+    font-size: $font-size-smaller;
+  }
+}
+
+.header__navigation-button {
+  cursor: pointer;
+
+  > .header__navigation-button-line {
+    width: $spacing-20;
+    height: $height-line;
+    background-color: $color-brown;
+    margin: 0 0 $spacing-5 auto;
+  }
+
+  > .header__navigation-button-line:first-of-type {
+    width: $spacing-25;
+  }
+
+  > .header__navigation-button-line:last-of-type {
+    width: $spacing-15;
+  }
+
+  @media (min-width: $screen-large) {
+    display: none;
+  }
+}
+
+#navigation-open:not(:checked) {
+  ~ .navigation {
+    display: none;
+  }
+
+  @media (min-width: $screen-large) {
+    ~ .navigation {
+      display: block;
+    }
+  }
+}

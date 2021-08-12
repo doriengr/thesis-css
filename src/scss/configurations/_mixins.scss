@@ -1,0 +1,59 @@
+@mixin spacing() {
+  margin-top: $grid-spacing-y-mobile;
+  margin-bottom: $grid-spacing-y-mobile;
+
+  @media (min-width: $screen-middle) {
+    margin-top: $spacing-100;
+    margin-bottom: $spacing-100;
+  }
+
+  @media (min-width: $screen-large) {
+    margin-top: $grid-spacing-y-desktop;
+    margin-bottom: $grid-spacing-y-desktop;
+  }
+
+  @media (min-width: $screen-huge) {
+    margin-top: $spacing-160;
+    margin-bottom: $spacing-160;
+  }
+}
+
+@mixin spacing-bottom() {
+  margin-bottom: $spacing-25;
+
+  @media (min-width: $screen-large) {
+    margin-bottom: $spacing-40;
+  }
+}
+
+@mixin font-montserrat {
+  font-family: $font-family-span;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-standard;
+}
+
+@mixin font-montserrat-wide {
+  font-family: $font-family-span;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-wide;
+}
+
+@mixin font-ivypresto {
+  font-family: $font-family-headline;
+  letter-spacing: $letter-spacing-tight;
+  line-height: $line-height-standard;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@mixin font-ivypresto-tight {
+  font-family: $font-family-headline;
+  letter-spacing: $letter-spacing-tight;
+  line-height: $line-height-tight;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+@mixin transition() {
+  transition: $transition-type $transition-duration $transition-function;
+}

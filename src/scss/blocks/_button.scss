@@ -1,0 +1,28 @@
+.button {
+  grid-column: 2/8;
+  display: block;
+  background-color: $color-extra-light;
+  border: 1px solid $color-dark;
+  padding: $spacing-10 $spacing-15;
+  max-width: max-content;
+  max-height: max-content;
+  margin: $spacing-40 auto 0 auto;
+
+  @include transition;
+
+  &:hover {
+    background-color: $color-dark;
+    color: $color-extra-light;
+  }
+
+  @media (min-width: $screen-large) {
+    grid-column: 2/5;
+    margin-top: $spacing-60;
+    align-self: end;
+  }
+}
+
+.button__text {
+  text-align: center;
+  text-transform: uppercase;
+}
