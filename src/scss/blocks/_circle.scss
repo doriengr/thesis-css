@@ -9,7 +9,7 @@
     height: $spacing-80;
     border-radius: 100%;
     border: $height-line solid $color-brown;
-    z-index: $z-index-standard;
+    z-index: $z-index-middle;
   }
 
   @media (min-width: $screen-large) {

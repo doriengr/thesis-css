@@ -1,0 +1,16 @@
+.contact__image {
+  grid-column: 1/-1;
+  height: $spacing-160;
+
+  @media (min-width: $screen-small) {
+    height: $spacing-240;
+  }
+
+  @media (min-width: $screen-larger) {
+    height: $spacing-384;
+  }
+}
+
+.contact__address {
+  text-align: center;
+}

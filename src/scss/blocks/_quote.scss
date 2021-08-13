@@ -1,0 +1,55 @@
+.quote {
+  grid-column: 2/8;
+}
+
+.quote--spacing-bottom {
+  grid-column: 2/8;
+
+  @include spacing-bottom;
+
+  @media (min-width: $screen-large) {
+    grid-column: 2/7;
+  }
+}
+
+.quote__inner {
+  margin-bottom: $spacing-25;
+
+  @include font-ivypresto;
+
+  @media (min-width: $screen-large) {
+    font-size: $font-size-larger;
+  }
+}
+
+.quote__inner--large {
+  line-height: $line-height-tight;
+  font-size: $font-size-largest;
+  text-align: center;
+  margin: $grid-spacing-y-mobile auto $spacing-25 auto;
+  max-width: $max-width-640;
+
+  @media (min-width: $screen-large) {
+    font-size: $font-size-huger;
+    margin: $grid-spacing-y-desktop auto $spacing-40 auto;
+  }
+}
+
+.quote__inner--red {
+  color: $color-red;
+}
+
+.quote__caption {
+  @media (min-width: $screen-large) {
+    max-width: $max-width-448;
+    margin-left: auto;
+  }
+}
+
+.quote__caption-inner {
+  color: $color-red;
+  font-size: $font-size-small;
+  white-space: nowrap;
+
+  @include font-montserrat;
+}
