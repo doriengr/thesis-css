@@ -1,12 +1,13 @@
 @import './node_modules/minireset.css/minireset.sass',
   'configurations/fonts',
   'configurations/variables',
-  'configurations/general',
-  'configurations/mixins';
+  'configurations/mixins',
+  'configurations/general';
 @import 'blocks/button',
   'blocks/circle',
   'blocks/clippath',
   'blocks/container',
+  'blocks/footer',
   'blocks/header',
   'blocks/headline',
   'blocks/hero',

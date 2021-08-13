@@ -1,8 +1,6 @@
 .footer {
   padding-top: $spacing-20;
-  color: $color-extra-light;
-  position: relative;
-  z-index: $z-index-standard;
+  margin-bottom: 0;
 
   &::before {
     content: '';

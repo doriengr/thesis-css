@@ -39,10 +39,6 @@
 }
 
 .origin__image-inner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
   @media (min-width: $screen-large) {
     clip-path: url(#clip-path-full);
   }
@@ -58,4 +54,8 @@
     align-self: center;
     margin-top: $spacing-60;
   }
+}
+
+.origin__headline {
+  color: $color-red;
 }
