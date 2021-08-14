@@ -7,7 +7,7 @@
 .line--grid {
   grid-column: 2/8;
 
-  @include spacing-bottom;
+  @include padding-bottom;
 
   @media (min-width: $screen-huger) {
     grid-column: 1/8;

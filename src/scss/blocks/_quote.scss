@@ -5,7 +5,7 @@
 .quote--spacing-bottom {
   grid-column: 2/8;
 
-  @include spacing-bottom;
+  @include padding-bottom;
 
   @media (min-width: $screen-large) {
     grid-column: 2/7;

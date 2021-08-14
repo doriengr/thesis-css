@@ -78,11 +78,7 @@ h1 {
 
 h2 {
   font-weight: 100;
-  font-size: $font-size-larger;
-
-  @media (min-width: $screen-small) {
-    font-size: $font-size-largest;
-  }
+  font-size: $font-size-largest;
 
   @media (min-width: $screen-middle) {
     font-size: $font-size-huge;

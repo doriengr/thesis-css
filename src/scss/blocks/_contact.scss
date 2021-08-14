@@ -1,5 +1,6 @@
 .contact {
   @include container;
+  @include spacing;
 }
 
 .contact__image {

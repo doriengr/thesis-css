@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  margin-bottom: 0;
+  margin: $grid-spacing-y-mobile auto;
 
   @include container;
 
@@ -17,8 +17,6 @@
   }
 
   @media (min-width: $screen-small) {
-    padding-top: $spacing-25;
-
     &::after {
       grid-row: 1/4;
       top: 15%;
@@ -26,11 +24,12 @@
   }
 
   @media (min-width: $screen-middle) {
-    padding-top: $spacing-60;
+    margin: $spacing-160 auto;
   }
 
   @media (min-width: $screen-large) {
     grid-row: 1/5;
+    margin-bottom: 0;
 
     &::after {
       top: 20%;

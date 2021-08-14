@@ -3,6 +3,7 @@
   max-height: $max-width-608;
 
   @include container;
+  @include spacing-bottom;
 
   &::after {
     content: '';

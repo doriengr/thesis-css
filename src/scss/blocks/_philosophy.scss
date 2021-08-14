@@ -1,5 +1,6 @@
 .philosophy {
   @include container;
+  @include spacing;
 }
 
 .philosophy__headline {
