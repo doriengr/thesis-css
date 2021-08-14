@@ -1,6 +1,8 @@
 .history {
   position: relative;
 
+  @include container;
+
   &::after {
     content: '';
     background-color: $color-light;
@@ -49,7 +51,7 @@
     }
 
     .history__text-large {
-      grid-column: 5/8;
+      margin: 0 0 0 30%;
     }
 
     .history__text-small {

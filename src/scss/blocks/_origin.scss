@@ -2,6 +2,8 @@
   position: relative;
   max-height: $max-width-608;
 
+  @include container;
+
   &::after {
     content: '';
     background-color: $color-light;

@@ -1,0 +1,8 @@
+.philosophy {
+  @include container;
+}
+
+.philosophy__headline {
+  text-align: center;
+  grid-column: 2/8;
+}

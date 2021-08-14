@@ -2,6 +2,8 @@
   position: relative;
   margin-bottom: 0;
 
+  @include container;
+
   &::after {
     content: '';
     position: absolute;
