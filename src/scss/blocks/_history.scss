@@ -43,6 +43,11 @@
 .history__headline {
   white-space: nowrap;
   margin-bottom: 0;
+  text-align: center;
+
+  @media (min-width: $screen-large) {
+    text-align: right;
+  }
 }
 
 .history__image {
