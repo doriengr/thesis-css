@@ -5,10 +5,7 @@
 
 .philosophy__headline {
   grid-column: 2/8;
-
-  @media (min-width: $screen-middle) {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .philosophy__text {
