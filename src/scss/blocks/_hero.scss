@@ -1,18 +1,18 @@
 .hero {
-  position: relative;
-  margin: $grid-spacing-y-mobile auto;
-
   @include container;
 
+  margin: $grid-spacing-y-mobile auto;
+  position: relative;
+
   &::after {
+    background-color: $color-light;
     content: '';
-    position: absolute;
-    top: 30%;
     grid-column: 1/5;
     grid-row: 1/2;
-    background-color: $color-light;
-    width: 70%;
     height: 100%;
+    position: absolute;
+    top: 30%;
+    width: 70%;
     z-index: $z-index-lowest;
   }
 
@@ -44,8 +44,8 @@
 }
 
 .hero__image {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .hero__image--large {
@@ -92,8 +92,8 @@
 }
 
 .hero__headline {
-  grid-column: 4/8;
   align-self: center;
+  grid-column: 4/8;
   max-width: $max-width-448;
 
   @media (min-width: $screen-small) {
@@ -112,13 +112,13 @@
 }
 
 .hero__date {
-  grid-column: 7/8;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  grid-row: 2/3;
   align-self: flex-start;
+  grid-column: 7/8;
+  grid-row: 2/3;
   justify-self: end;
+  transform: rotate(180deg);
   white-space: nowrap;
+  writing-mode: vertical-rl;
 
   @media (min-width: $screen-small) {
     grid-row: 4/5;
@@ -126,10 +126,10 @@
 
   @media (min-width: $screen-large) {
     grid-column: 4/5;
-    writing-mode: inherit;
-    transform: rotate(0);
     justify-self: flex-start;
     margin: 0 0 $spacing-25 $spacing-120;
+    transform: rotate(0);
+    writing-mode: inherit;
   }
 
   @media (min-width: $screen-larger) {
@@ -139,16 +139,16 @@
 
 .hero__description {
   grid-column: 2/8;
-  position: relative;
   margin-top: $spacing-80;
+  position: relative;
 
   &::before {
+    background-color: $color-brown;
     content: '';
+    height: $height-line;
     position: absolute;
     top: -$spacing-25;
     width: $spacing-100;
-    height: $height-line;
-    background-color: $color-brown;
   }
 
   @media (min-width: $screen-small) {
@@ -173,21 +173,21 @@
   display: none;
 
   @media (min-width: $screen-large) {
+    align-self: end;
     display: block;
     grid-column: 2/3;
-    align-self: end;
-    position: relative;
     margin-right: $spacing-25;
+    position: relative;
 
     &::before {
-      content: '';
       background-color: $color-brown;
-      position: absolute;
-      width: 100%;
+      content: '';
       height: $height-line;
-      top: -$spacing-25;
       left: 0;
+      position: absolute;
       right: 0;
+      top: -$spacing-25;
+      width: 100%;
     }
   }
 }

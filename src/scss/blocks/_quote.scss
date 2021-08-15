@@ -3,9 +3,9 @@
 }
 
 .quote--spacing-bottom {
-  grid-column: 2/8;
-
   @include padding-bottom;
+
+  grid-column: 2/8;
 
   @media (min-width: $screen-large) {
     grid-column: 2/7;
@@ -13,10 +13,10 @@
 }
 
 .quote__inner {
-  margin-bottom: $spacing-25;
-  color: $color-green;
-
   @include font-ivypresto;
+
+  color: $color-green;
+  margin-bottom: $spacing-25;
 
   @media (min-width: $screen-large) {
     font-size: $font-size-larger;
@@ -24,11 +24,11 @@
 }
 
 .quote__inner--large {
-  line-height: $line-height-tight;
   font-size: $font-size-largest;
-  text-align: center;
+  line-height: $line-height-tight;
   margin: $grid-spacing-y-mobile auto $spacing-25 auto;
   max-width: $max-width-640;
+  text-align: center;
 
   @media (min-width: $screen-large) {
     font-size: $font-size-huger;
@@ -42,15 +42,15 @@
 
 .quote__caption {
   @media (min-width: $screen-large) {
-    max-width: $max-width-448;
     margin-left: auto;
+    max-width: $max-width-448;
   }
 }
 
 .quote__caption-inner {
+  @include font-montserrat;
+
   color: $color-red;
   font-size: $font-size-small;
   white-space: nowrap;
-
-  @include font-montserrat;
 }

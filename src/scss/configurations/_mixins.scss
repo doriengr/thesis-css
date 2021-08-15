@@ -67,29 +67,29 @@
 
 @mixin font-montserrat {
   font-family: $font-family-span;
-  text-transform: uppercase;
   letter-spacing: $letter-spacing-standard;
+  text-transform: uppercase;
 }
 
 @mixin font-montserrat-wide {
   font-family: $font-family-span;
-  text-transform: uppercase;
   letter-spacing: $letter-spacing-wide;
+  text-transform: uppercase;
 }
 
 @mixin font-ivypresto {
   font-family: $font-family-headline;
+  font-weight: 100;
   letter-spacing: $letter-spacing-tight;
   line-height: $line-height-standard;
-  font-weight: 100;
   text-transform: uppercase;
 }
 
 @mixin font-ivypresto-tight {
   font-family: $font-family-headline;
+  font-weight: 100;
   letter-spacing: $letter-spacing-tight;
   line-height: $line-height-tight;
-  font-weight: 100;
   text-transform: uppercase;
 }
 

@@ -1,8 +1,8 @@
 .socialmedia {
-  display: none;
-  flex-direction: row;
   align-items: center;
   align-self: end;
+  display: none;
+  flex-direction: row;
 }
 
 .socialmedia--mobile {
@@ -13,21 +13,21 @@
 
 .socialmedia--grid {
   @media (min-width: $screen-large) {
+    display: flex;
     grid-column: 3/4;
     grid-row: 1;
-    display: flex;
     justify-content: flex-end;
   }
 }
 
 .socialmedia__link {
-  margin: 0 $spacing-10;
-
   @include transition;
 
+  margin: 0 $spacing-10;
+
   &:hover {
-    transform: scale($transform-scale);
     opacity: 65%;
+    transform: scale($transform-scale);
   }
 }
 

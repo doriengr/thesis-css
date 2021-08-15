@@ -1,50 +1,50 @@
 .navigation {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  min-height: 23.5rem;
-  width: 100vw;
   background-color: $color-brown;
-  z-index: $z-index-high;
-  padding: 0 $grid-spacing-outside;
+  height: 100vh;
+  left: 0;
+  min-height: 23.5rem;
   overflow-y: scroll;
+  padding: 0 $grid-spacing-outside;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: $z-index-high;
 
   @media (min-width: $screen-large) {
+    align-self: end;
     background-color: transparent;
-    position: relative;
-    width: auto;
-    height: auto;
-    min-height: 0;
-    padding: 0;
-    overflow-y: hidden;
     grid-column: 1/2;
     grid-row: 1;
-    align-self: end;
+    height: auto;
+    min-height: 0;
+    overflow-y: hidden;
+    padding: 0;
+    position: relative;
+    width: auto;
   }
 }
 
 .navigation__close {
-  position: relative;
+  @include transition;
+
+  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   margin-top: $spacing-5;
-  cursor: pointer;
+  position: relative;
   z-index: $z-index-low;
-
-  @include transition;
 
   &:hover {
     opacity: 65%;
   }
 
   > .navigation__close-line {
-    width: $spacing-25;
-    height: $height-line;
     background-color: $color-extra-light;
+    height: $height-line;
     margin-top: $spacing-20;
     position: absolute;
+    width: $spacing-25;
   }
 
   > .navigation__close-line:first-of-type {
@@ -74,16 +74,16 @@
 }
 
 .navigation__logo-wrapper {
+  @include transition;
+
+  cursor: pointer;
   display: block;
+  left: 0;
   margin-bottom: $spacing-50;
   opacity: 65%;
   position: absolute;
-  top: 28%;
-  left: 0;
   right: 0;
-  cursor: pointer;
-
-  @include transition;
+  top: 28%;
 
   &:hover {
     opacity: 100%;
@@ -96,34 +96,34 @@
 }
 
 .navigation__logo {
-  width: $spacing-120;
-  height: auto;
   display: block;
+  height: auto;
   margin: 0 auto;
+  width: $spacing-120;
 }
 
 .navigation__list {
-  width: 100%;
+  align-items: center;
   color: $color-extra-light;
-  font-family: $font-family-span;
-  font-size: $font-size-base;
   display: flex;
   flex-direction: column;
+  font-family: $font-family-span;
+  font-size: $font-size-base;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 40%;
   left: 0;
+  position: absolute;
   right: 0;
+  top: 40%;
+  width: 100%;
 
   > .navigation__list-item > a {
-    margin-bottom: $spacing-20;
-    cursor: pointer;
-    text-transform: lowercase;
-    display: block;
-    color: $color-extra-light;
-
     @include transition;
+
+    color: $color-extra-light;
+    cursor: pointer;
+    display: block;
+    margin-bottom: $spacing-20;
+    text-transform: lowercase;
 
     &:hover {
       color: $color-green;
@@ -133,12 +133,12 @@
   @media (min-width: $screen-large) {
     color: $color-dark;
     flex-direction: row;
-    justify-content: flex-start;
     font-size: $font-size-smallest;
+    justify-content: flex-start;
 
     > .navigation__list-item > a {
-      margin: 0 $spacing-15 0 0;
       color: $color-green;
+      margin: 0 $spacing-15 0 0;
 
       &:hover {
         color: $color-dark;

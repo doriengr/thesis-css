@@ -4,33 +4,33 @@
 
 .circle--after {
   &::after {
-    content: '';
-    width: $spacing-80;
-    height: $spacing-80;
-    border-radius: 100%;
     border: $height-line solid $color-brown;
+    border-radius: 100%;
+    content: '';
+    height: $spacing-80;
+    width: $spacing-80;
     z-index: $z-index-middle;
   }
 
   @media (min-width: $screen-large) {
     &::after {
-      width: $spacing-200;
       height: $spacing-200;
+      width: $spacing-200;
     }
   }
 }
 
 .circle--top-left {
   &::after {
+    left: -$spacing-40;
     position: absolute;
     top: -$spacing-40;
-    left: -$spacing-40;
   }
 
   @media (min-width: $screen-large) {
     &::after {
-      top: -$spacing-100;
       left: -$spacing-100;
+      top: -$spacing-100;
     }
   }
 }
@@ -38,8 +38,8 @@
 .circle--top-right {
   &::after {
     position: absolute;
-    top: -$spacing-40;
     right: -$spacing-40;
+    top: -$spacing-40;
   }
 
   @media (min-width: $screen-large) {
@@ -51,8 +51,8 @@
 
 .circle--bottom-right {
   &::after {
-    position: absolute;
     bottom: -$spacing-40;
+    position: absolute;
     right: -$spacing-40;
   }
 

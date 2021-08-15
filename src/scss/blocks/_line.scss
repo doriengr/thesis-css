@@ -1,13 +1,13 @@
 .line {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .line__inner {
-  width: 100%;
-  height: $height-line;
   background-color: $color-red;
+  height: $height-line;
+  width: 100%;
 }
 
 .line--hidden {
@@ -27,9 +27,9 @@
 }
 
 .line--grid {
-  grid-column: 2/8;
-
   @include padding-bottom;
+
+  grid-column: 2/8;
 
   @media (min-width: $screen-huger) {
     grid-column: 1/8;

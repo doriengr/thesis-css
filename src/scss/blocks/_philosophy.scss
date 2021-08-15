@@ -23,15 +23,15 @@
 }
 
 .philosophy__text--green {
-  grid-column: 1/-1;
-  padding: $spacing-25 $grid-spacing-outside;
-  margin-top: $spacing-25;
   background-color: $color-light;
+  grid-column: 1/-1;
+  margin-top: $spacing-25;
+  padding: $spacing-25 $grid-spacing-outside;
 
   @media (min-width: $screen-large) {
     grid-column: 6/9;
     grid-row: 3/5;
-    padding: $spacing-25 ($grid-spacing-outside * 2);
     margin-top: $spacing-50;
+    padding: $spacing-25 ($grid-spacing-outside * 2);
   }
 }
