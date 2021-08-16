@@ -1,6 +1,6 @@
 (function () {
-  const navItems = document.querySelectorAll('.js-link');
-  const checkbox = document.getElementById('navigation-open');
+  let navItems = document.querySelectorAll('.js-link');
+  let checkbox = document.getElementById('navigation-open');
   
   function closeMenu() {
     for(let i = 0; i < navItems.length; i++) {

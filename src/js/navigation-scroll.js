@@ -1,5 +1,5 @@
 (function () {
-  const navItems = document.querySelectorAll('.js-link');
+  let navItems = document.querySelectorAll('.js-link');
   
   function initSmoothScrolling() {
     navItems.forEach(trigger => {
