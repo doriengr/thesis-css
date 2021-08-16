@@ -48,6 +48,9 @@
   @media (min-width: $screen-large) {
     text-align: right;
   }
+  @media (max-width: 320px) {
+    white-space: normal;
+  }
 }
 
 .history__image {
