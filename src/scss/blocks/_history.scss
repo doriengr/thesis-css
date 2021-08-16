@@ -41,7 +41,7 @@
 }
 
 .history__headline {
-  margin-bottom: 0;
+  margin-bottom: $spacing-0;
   text-align: center;
   white-space: nowrap;
 
@@ -84,7 +84,7 @@
     grid-column: 3/5;
     grid-row: 3/4;
     height: 100%;
-    margin-bottom: 0;
+    margin-bottom: $spacing-0;
     max-height: $spacing-300;
   }
 
@@ -98,7 +98,7 @@
   margin-top: $spacing-25;
 
   > p {
-    margin: $spacing-15 0;
+    margin: $spacing-15 $spacing-0;
   }
 }
 
@@ -107,11 +107,11 @@
     align-self: center;
     grid-column: 4/8;
     grid-row: 2/3;
-    margin: 0 0 0 15%;
+    margin: $spacing-0 $spacing-0 $spacing-0 15%;
   }
 
   @media (min-width: $screen-larger) {
-    margin: 0 0 0 30%;
+    margin: $spacing-0 $spacing-0 $spacing-0 30%;
   }
 }
 

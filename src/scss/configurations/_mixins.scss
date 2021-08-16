@@ -1,12 +1,12 @@
 @mixin spacing() {
-  margin: $grid-spacing-y-mobile auto;
+  margin: $spacing-80 auto;
 
   @media (min-width: $screen-middle) {
     margin: $spacing-100 auto;
   }
 
   @media (min-width: $screen-large) {
-    margin: $grid-spacing-y-desktop auto;
+    margin: $spacing-120 auto;
   }
 
   @media (min-width: $screen-huge) {
@@ -15,34 +15,34 @@
 }
 
 @mixin spacing-top() {
-  margin: $grid-spacing-y-mobile auto 0 auto;
+  margin: $spacing-80 auto $spacing-0 auto;
 
   @media (min-width: $screen-middle) {
-    margin: $spacing-100 auto 0 auto;
+    margin: $spacing-100 auto $spacing-0 auto;
   }
 
   @media (min-width: $screen-large) {
-    margin: $grid-spacing-y-desktop auto 0 auto;
+    margin: $spacing-120 auto $spacing-0 auto;
   }
 
   @media (min-width: $screen-huge) {
-    margin: $spacing-160 auto 0 auto;
+    margin: $spacing-160 auto $spacing-0 auto;
   }
 }
 
 @mixin spacing-bottom() {
-  margin: 0 auto $grid-spacing-y-mobile auto;
+  margin: $spacing-0 auto $spacing-80 auto;
 
   @media (min-width: $screen-middle) {
-    margin: 0 auto $spacing-100 auto;
+    margin: $spacing-0 auto $spacing-100 auto;
   }
 
   @media (min-width: $screen-large) {
-    margin: 0 auto $grid-spacing-y-desktop auto;
+    margin: $spacing-0 auto $spacing-120 auto;
   }
 
   @media (min-width: $screen-huge) {
-    margin: 0 auto $spacing-160 auto;
+    margin: $spacing-0 auto $spacing-160 auto;
   }
 }
 
@@ -61,7 +61,7 @@
   max-width: $screen-huger;
 
   @media (min-width: $screen-huger) {
-    padding: 0 $grid-spacing-outside;
+    padding: $spacing-0 $grid-spacing-outside;
   }
 }
 

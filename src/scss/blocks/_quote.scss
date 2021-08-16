@@ -26,13 +26,13 @@
 .quote__inner--large {
   font-size: $font-size-largest;
   line-height: $line-height-tight;
-  margin: $grid-spacing-y-mobile auto $spacing-25 auto;
-  max-width: $max-width-640;
+  margin: $spacing-80 auto $spacing-25 auto;
+  max-width: $max-width-650;
   text-align: center;
 
   @media (min-width: $screen-large) {
     font-size: $font-size-huger;
-    margin: $grid-spacing-y-desktop auto $spacing-40 auto;
+    margin: $spacing-120 auto $spacing-40 auto;
   }
 }
 
@@ -43,7 +43,7 @@
 .quote__caption {
   @media (min-width: $screen-large) {
     margin-left: auto;
-    max-width: $max-width-448;
+    max-width: $max-width-450;
   }
 }
 

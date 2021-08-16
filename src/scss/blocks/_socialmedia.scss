@@ -23,7 +23,7 @@
 .socialmedia__link {
   @include transition;
 
-  margin: 0 $spacing-10;
+  margin: $spacing-0 $spacing-10;
 
   &:hover {
     opacity: 65%;

@@ -1,7 +1,7 @@
 .hero {
   @include container;
 
-  margin: $grid-spacing-y-mobile auto;
+  margin: $spacing-80 auto;
   position: relative;
 
   &::after {
@@ -29,7 +29,7 @@
 
   @media (min-width: $screen-large) {
     grid-row: 1/5;
-    margin-bottom: 0;
+    margin-bottom: $spacing-0;
 
     &::after {
       top: 20%;
@@ -94,7 +94,7 @@
 .hero__headline {
   align-self: center;
   grid-column: 4/8;
-  max-width: $max-width-448;
+  max-width: $max-width-450;
 
   @media (min-width: $screen-small) {
     align-self: flex-start;
@@ -107,7 +107,7 @@
 
   @media (min-width: $screen-large) {
     grid-column: 4/7;
-    max-width: $max-width-640;
+    max-width: $max-width-650;
   }
 }
 
@@ -127,8 +127,8 @@
   @media (min-width: $screen-large) {
     grid-column: 4/5;
     justify-self: flex-start;
-    margin: 0 0 $spacing-25 $spacing-120;
-    transform: rotate(0);
+    margin: $spacing-0 $spacing-0 $spacing-25 $spacing-120;
+    transform: rotate($spacing-0);
     writing-mode: inherit;
   }
 
@@ -154,7 +154,7 @@
   @media (min-width: $screen-small) {
     grid-column: 4/8;
     grid-row: 3/4;
-    margin: 0 0 $spacing-25 $spacing-120;
+    margin: $spacing-0 $spacing-0 $spacing-25 $spacing-120;
 
     &::before {
       left: -$spacing-120;
@@ -183,9 +183,9 @@
       background-color: $color-brown;
       content: '';
       height: $height-line;
-      left: 0;
+      left: $spacing-0;
       position: absolute;
-      right: 0;
+      right: $spacing-0;
       top: -$spacing-25;
       width: 100%;
     }

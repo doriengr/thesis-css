@@ -29,10 +29,10 @@ main {
 
 header {
   background-color: rgba($color-extra-light, 0.8);
-  left: 0;
+  left: $spacing-0;
   position: fixed;
-  right: 0;
-  top: 0;
+  right: $spacing-0;
+  top: $spacing-0;
   width: 100vw;
   z-index: $z-index-high;
 }

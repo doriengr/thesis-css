@@ -26,7 +26,7 @@
 
 .products__wrapper {
   display: grid;
-  gap: $spacing-25 0;
+  gap: $spacing-25 $spacing-0;
   grid-column: 2/8;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $screen-large) {
-    gap: 0 $spacing-60;
+    gap: $spacing-0 $spacing-60;
     grid-template-columns: 1fr 1fr 1fr;
 
     > li:nth-of-type(2) {
@@ -49,10 +49,10 @@
         background-color: $color-red;
         content: '';
         height: 1.5px;
-        left: 0;
+        left: $spacing-0;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: $spacing-0;
+        top: $spacing-0;
         width: 100%;
       }
     }
@@ -75,7 +75,7 @@
   }
 
   @media (min-width: $screen-larger) {
-    max-height: $max-width-448;
+    max-height: $max-width-450;
   }
 }
 
@@ -85,14 +85,15 @@
 
 .products__list-item {
   border: 1px solid $color-red;
+  cursor: pointer;
   margin-bottom: $spacing-15;
   padding: $spacing-10 $spacing-15;
   width: 100%;
 
   @media (min-width: $screen-large) {
-    border: 0;
+    border: $spacing-0;
     margin-bottom: $spacing-40;
-    padding: 0;
+    padding: $spacing-0;
   }
 }
 
@@ -112,7 +113,7 @@
     content: '';
     height: $spacing-10;
     position: absolute;
-    right: 0;
+    right: $spacing-0;
     top: 40%;
     transform: rotate(180deg);
     width: $spacing-20;
@@ -140,14 +141,14 @@
 }
 
 .products__sublist-sub {
-  margin: $spacing-15 0 0 $spacing-20;
+  margin: $spacing-15 $spacing-0 $spacing-0 $spacing-20;
 
   > * {
     margin-bottom: $spacing-15;
   }
 
   > *:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: $spacing-0;
   }
 }
 
