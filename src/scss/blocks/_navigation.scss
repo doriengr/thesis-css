@@ -31,7 +31,7 @@
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  margin-top: $spacing-5;
+  margin-top: $spacing-15;
   position: relative;
   z-index: $z-index-low;
 
@@ -39,24 +39,8 @@
     opacity: 65%;
   }
 
-  > .navigation__close-line {
-    background-color: $color-extra-light;
-    height: $height-line;
-    margin-top: $spacing-20;
-    position: absolute;
-    width: $spacing-25;
-  }
-
-  > .navigation__close-line:first-of-type {
-    transform: rotate(45deg);
-  }
-
-  > .navigation__close-line:last-of-type {
-    transform: rotate(-45deg);
-  }
-
   @media (min-width: $screen-middle) {
-    margin-top: $spacing-15;
+    margin-top: $spacing-25;
   }
 
   @media (min-width: $screen-large) {

@@ -79,21 +79,12 @@
 }
 
 .header__navigation-button {
+  @include transition;
+
   cursor: pointer;
 
-  > .header__navigation-button-line {
-    background-color: $color-brown;
-    height: $height-line;
-    margin: $spacing-0 $spacing-0 $spacing-5 auto;
-    width: $spacing-20;
-  }
-
-  > .header__navigation-button-line:first-of-type {
-    width: $spacing-25;
-  }
-
-  > .header__navigation-button-line:last-of-type {
-    width: $spacing-15;
+  &:hover {
+    opacity: 65%;
   }
 
   @media (min-width: $screen-large) {
