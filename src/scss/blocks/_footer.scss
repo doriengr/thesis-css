@@ -47,7 +47,7 @@
   width: $spacing-120;
 
   &:hover {
-    opacity: 65%;
+    opacity: $opacity-hover;
     transform: scale($transform-scale);
   }
 }

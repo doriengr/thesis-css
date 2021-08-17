@@ -36,7 +36,7 @@
   z-index: $z-index-low;
 
   &:hover {
-    opacity: 65%;
+    opacity: $opacity-hover;
   }
 
   @media (min-width: $screen-middle) {
@@ -64,7 +64,7 @@
   display: block;
   left: $spacing-0;
   margin-bottom: $spacing-50;
-  opacity: 65%;
+  opacity: $opacity-hover;
   position: absolute;
   right: $spacing-0;
   top: 28%;

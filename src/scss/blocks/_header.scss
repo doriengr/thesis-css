@@ -84,7 +84,7 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 65%;
+    opacity: $opacity-hover;
   }
 
   @media (min-width: $screen-large) {
