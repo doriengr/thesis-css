@@ -157,26 +157,56 @@
     <main>
       <!-- hero -->
       <section class="hero">
-        <figure class="hero__image hero__image--large">
-          <img src="src/images/flavour-earth-cafe.jpg" alt="Flavour Eath · Unserer Innenbereich">
-        </figure>
-        <figure class="hero__image hero__image--small circle circle--after circle--bottom-right">
-          <img src="src/images/flavour-earth-baking.jpg" alt="Flavour Eath · Wir backen nur mit den besten Zutaten">
-        </figure>
+        <picture class="hero__image hero__image--large">
+          <img
+          sizes="(max-width: 500px) 100vw, 500px"
+          srcset="
+          src/images/flavour-earth-cafe-w-150.jpg 150w,
+          src/images/flavour-earth-cafe-w-333.jpg 333w,
+          src/images/flavour-earth-cafe-w-483.jpg 483w,
+          src/images/flavour-earth-cafe-w-500.jpg 500w"
+          src="src/images/flavour-earth-cafe-w-500.jpg"
+          alt="Flavour Eath · Unserer Innenbereich">
+        </picture>
+        <picture class="hero__image hero__image--small circle circle--after circle--bottom-right">
+          <img
+          sizes="(max-width: 500px) 100vw, 500px"
+          srcset="
+          src/images/flavour-earth-baking-w-150.jpg 150w,
+          src/images/flavour-earth-baking-w-500.jpg 500w"
+          src="src/images/flavour-earth-baking-w-500.jpg"
+          alt="Flavour Eath · Wir backen nur mit den besten Zutaten">
+        </picture>
         <h1 class="hero__headline">Veganes Café im Herzen Flensburgs</h1>
         <span class="hero__date">Est. 2012</span>
         <p class="hero__description">Entdecke unser vielfältiges Angebot an vegane Backwaren und erlebe Geschmacks&shy;explosionen 
           aus reinen tierfreien, regionalen Zutaten.</p>
-        <figure class="hero__image hero__image--hidden">
-          <img src="src/images/falvour-earth-roll-seletction.jpg" alt="Flavour Eath · Unsere Auswahl an Leckereien">
-        </figure>
+          <picture class="hero__image hero__image--hidden">
+            <img
+            sizes="(max-width: 250px) 100vw, 250px"
+            srcset="
+            src/images/falvour-earth-roll-seletction-w-150.jpg 150w,
+            src/images/falvour-earth-roll-seletction-w-250.jpg 250w"
+            src="src/images/falvour-earth-roll-seletction-w-250.jpg"
+            alt="Flavour Eath · Unsere Auswahl an Leckereien">
+          </picture>
         <p class="hero__usp">Handarbeit, einzigartige Qualität und erstklassiger Geschmack!</p>
       </section>
       <!-- origin of products -->
       <section class="origin">
-        <figure class="origin__image circle circle--after circle--top-right">
-          <img src="src/images/flavour-earth-corn.jpg" class="origin__image-inner" alt="Flavour Eath · Regionales Getreide">
-        </figure>
+        <picture class="origin__image circle circle--after circle--top-right">
+          <img
+          class="origin__image-inner"
+          sizes="(max-width: 800px) 100vw, 800px"
+          srcset="
+          src/images/flavour-earth-corn-w-330.jpg 330w,
+          src/images/flavour-earth-corn-w-502.jpg 502w,
+          src/images/flavour-earth-corn-w-642.jpg 642w,
+          src/images/flavour-earth-corn-w-774.jpg 774w,
+          src/images/flavour-earth-corn-w-800.jpg 800w"
+          src="src/images/flavour-earth-corn-w-800.jpg"
+          alt="Flavour Eath · Regionales Getreide">
+        </picture>
         <div class="origin__description">
           <h2 class="origin__headline">Inspiriert von der Region!</h2>
           <p>All unsere Produkte werden aus tierfreien und regionalen Produkten hergestellt. Dabei achten wir nicht nur auf kurze Transportwege,
@@ -192,12 +222,24 @@
           <div class="line__inner line__inner--left"></div>
           <h2 class="history__headline">Unsere Geschichte</h2>
         </div>
-        <figure class="history__image history__image--large">
-          <img src="/src/images/flavour-earth-history-alma.jpg" alt="Flavour Eath · Alma">
-        </figure>
-        <figure class="history__image history__image--small circle circle--after circle--top-left">
-          <img src="/src/images/flavour-earth-history-julia.jpg" alt="Flavour Eath · Julia">
-        </figure>
+        <picture class="history__image history__image--large">
+          <img
+          sizes="(max-width: 420px) 100vw, 420px"
+          srcset="
+          src/images/flavour-earth-history-alma-w-180.jpg 180w,
+          src/images/flavour-earth-history-alma-w-420.jpg 420w"
+          src="src/images/flavour-earth-history-alma-w-420.jpg"
+          alt="Flavour Eath · Alma">
+        </picture>
+        <picture class="history__image history__image--small circle circle--after circle--top-left">
+          <img
+          ssizes="(max-width: 380px) 100vw, 380px"
+          srcset="
+          src/images/flavour-earth-history-julia-w-180.jpg 150w,
+          src/images/flavour-earth-history-julia-w-380.jpg 380w"
+          src="src/images/flavour-earth-history-julia-w-380.jpg"
+          alt="Flavour Eath · Julia">
+        </picture>
         <div class="history__text history__text--large">
           <p>
             Das Abendteuer begann bei unserer unbegrenzten Liebe zum Backen und beim Ausprobieren neuer Kreationen. Nachdem wir - Alma und Julia - unsere Ausbildungen abgeschlossen 
@@ -223,7 +265,19 @@
         <h2 class="products__headline">Entdecke unsere vegane Vielfalt!</h2>
         <ul class="products__wrapper">
           <li class="products__category">
-            <img src="/src/images/flavour-earth-products-bread.jpg" class="products__image" alt="Flavour Eath · Brot und Brötchen">
+            <picture>
+              <img
+              class="products__image"
+              sizes="(max-width: 790px) 100vw, 790px"
+              srcset="
+              src/images/flavour-earth-products-bread-w-250.jpg 250w,
+              src/images/flavour-earth-products-bread-w-429.jpg 429w,
+              src/images/flavour-earth-products-bread-w-563.jpg 563w,
+              src/images/flavour-earth-products-bread-w-693.jpg 693w,
+              src/images/flavour-earth-products-bread-w-790.jpg 790w"
+              src="src/images/flavour-earth-products-bread-w-790.jpg"
+              alt="Flavour Eath · Brot und Brötchen">
+            </picture>
             <h3>Brot & Brötchen</h3>
             <ul class="products__list">
               <li class="products__list-item">
@@ -262,7 +316,19 @@
             </ul>
           </li>
           <li class="products__category">
-            <img src="/src/images/flavour-earth-products-cake.jpg" class="products__image" alt="Flavour Eath · Unsere süße Leckereien">
+            <picture>
+              <img
+              class="products__image"
+              sizes="(max-width: 790px) 100vw, 790px"
+              srcset="
+              src/images/flavour-earth-products-cake-w-250.jpg 250w,
+              src/images/flavour-earth-products-cake-w-492.jpg 492w,
+              src/images/flavour-earth-products-cake-w-706.jpg 706w,
+              src/images/flavour-earth-products-cake-w-754.jpg 754w,
+              src/images/flavour-earth-products-cake-w-790.jpg 790w"
+              src="src/images/flavour-earth-products-cake-w-790.jpg"
+              alt="Flavour Eath · Unsere süße Leckereien">
+            </picture>
             <h3>Alles Süße</h3>
             <ul class="products__list">
               <li class="products__list-item">
@@ -302,7 +368,19 @@
             </ul>
           </li>
           <li class="products__category">
-            <img src="/src/images/flavour-earth-products-coffee.jpg" class="products__image" alt="Flavour Eath · Der beste Kaffee Flensburgs">
+            <picture>
+              <img
+              class="products__image"
+              sizes="(max-width: 790px) 100vw, 790px"
+              srcset="
+              src/images/flavour-earth-products-coffee-w-250.jpg 250w,
+              src/images/flavour-earth-products-coffee-w-424.jpg 424w,
+              src/images/flavour-earth-products-coffee-w-561.jpg 561w,
+              src/images/flavour-earth-products-coffee-w-696.jpg 696w,
+              src/images/flavour-earth-products-coffee-w-790.jpg 790w"
+              src="src/images/flavour-earth-products-coffee-w-790.jpg"
+              alt="Flavour Eath · Der beste Kaffee Flensburgs">
+            </picture>
             <h3>Durstlöscher</h3>
             <ul class="products__list">
               <li class="products__list-item">
@@ -397,9 +475,19 @@
       </section>
       <!-- contact -->
       <div id="contact" class="contact">
-        <figure class="contact__image">
-          <img src="/src/images/flavour-earth-bread-selection.jpg" alt="Flavour Eath · Unsere Auswahl an Brot">
-        </figure>
+        <picture class="contact__image">
+          <img
+          class="products__image"
+          sizes="(max-width: 1690px) 100vw, 1690px"
+          srcset="
+          src/images/flavour-earth-bread-selection-w-330.jpg 330w,
+          src/images/flavour-earth-bread-selection-w-841.jpg 841w,
+          src/images/flavour-earth-bread-selection-w-1169.jpg 1169w,
+          vflavour-earth-bread-selection-w-1533.jpg 1533w,
+          src/images/flavour-earth-bread-selection-w-1690.jpg 1690w"
+          src="src/images/flavour-earth-bread-selection-w-1690.jpg"
+          alt="Flavour Eath · Unsere Auswahl an Brot">
+        </picture>
         <figure class="quote">
           <blockquote class="quote__inner quote__inner--large">
             Möchtest du mehr erfahren? Dann schau doch einfach vorbei …
