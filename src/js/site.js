@@ -1,2 +1,0 @@
-!function(){const e=document.querySelectorAll(".js-link"),n=document.getElementById("navigation-open");!function(){for(let t=0;t<e.length;t++)e[t].addEventListener("click",(()=>{window.matchMedia("(max-width: 1024px)").matches&&(n.checked=!1)}))}()}();
-document.querySelectorAll(".js-link").forEach((e=>{e.onclick=function(e){e.preventDefault();let t=this.getAttribute("href"),o=document.querySelector(t),c=0;c=window.matchMedia("(max-width: 1024px)").matches?75:150;let l=o.offsetTop-c;window.scrollTo({top:l,behavior:"smooth"})}}));
