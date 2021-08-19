@@ -351,16 +351,12 @@
           </li>
           <li class="products__category">
             <picture>
-              <img
-              class="products__image"
-              sizes="(max-width: 696px) 100vw, 696px"
-              srcset="
-              src/images/flavour-earth-products-coffee-w-250.jpg 250w,
-              src/images/flavour-earth-products-coffee-w-424.jpg 424w,
-              src/images/flavour-earth-products-coffee-w-561.jpg 561w,
-              src/images/flavour-earth-products-coffee-w-696.jpg 696w"
-              src="src/images/flavour-earth-products-coffee-w-696.jpg"
-              alt="Flavour Eath · Der beste Kaffee Flensburgs">
+              <source media="(max-width: 450px)" srcset="src/images/flavour-earth-products-coffee-w-424.jpg 424w">
+              <source media="(max-width: 600px)" srcset="src/images/flavour-earth-products-coffee-w-561.jpg 561w">
+              <source media="(max-width: 750px)" srcset="src/images/flavour-earth-products-coffee-w-696.jpg 696w">
+              <source media="(max-width: 1024px)" srcset="src/images/flavour-earth-products-coffee-w-790.jpg 790w">
+              <source media="(min-width: 1024px)" srcset="src/images/flavour-earth-products-coffee-w-424.jpg 424w">
+              <img class="products__image" src="src/images/flavour-earth-products-coffee-w-696.jpg" alt="Flavour Eath · Der beste Kaffee Flensburgs">
             </picture>
             <h3>Durstlöscher</h3>
             <ul class="products__list">
