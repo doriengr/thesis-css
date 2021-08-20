@@ -29,7 +29,7 @@
     <header class="header">
       <div class="header__wrapper">
         <input aria-hidden="true" type="checkbox" id="navigation-open" class="visually-hidden">
-        <a href="#" class="header__logo">
+        <a href="#" class="header__logo" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
           <svg class="header__logo-icon" viewBox="0 0 21.74 49">
             <defs>
               <style>.b{fill:none;stroke:#b3a898;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
@@ -60,7 +60,7 @@
             </svg>
           </label>
           <div class="navigation__wrapper">
-            <a href="#" class="navigation__logo-wrapper" aria-label="Zur Startseite" title="Zur Startseite">
+            <a href="#" class="navigation__logo-wrapper" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
               <svg class="navigation__logo" viewBox="0 0 112.55 51.92">
                 <defs>
                     <style>.a{fill:#faf9f7;}</style>
@@ -92,25 +92,26 @@
               </svg>
             </a>
             <ul class="navigation__list">
-              <li class="navigation__list-item"><a class="js-link" href="#history">Geschichte</a></li>
-              <li class="navigation__list-item"><a class="js-link" href="#products">Produkte</a></li>
-              <li class="navigation__list-item"><a class="js-link" href="#philosophy">Philosophie</a></li>
-              <li class="navigation__list-item"><a class="js-link" href="#contact">Kontakt</a></li>
+              <li class="navigation__list-item"><a class="js-link" href="#history" aria-label="Zur Geschichte" title="Zur Geschichte">Geschichte</a></li>
+              <li class="navigation__list-item"><a class="js-link" href="#products" aria-label="Zu den Produkten" title="Zu den Produkten">Produkte</a></li>
+              <li class="navigation__list-item"><a class="js-link" href="#philosophy" aria-label="Zur Philosophie" title="Zur Philosophie">Philosophie</a></li>
+              <li class="navigation__list-item"><a class="js-link" href="#contact" aria-label="Zum Kontakt" title="Zum Kontakt">Kontakt</a></li>
             </ul>
           </div>
         </nav>
-        <label aria-hidden="true" for="navigation-open" class="header__navigation-button">
+        <label aria-hidden="true" aria-label="Öffne die Navigation" title="Öffne die Navigation" for="navigation-open" class="header__navigation-button">
           <svg width="29.5" height="13.2" viewBox="0 0 29.5 13.2">
             <g transform="translate(0 0.6)">
               <line x2="29.5" fill="none" stroke="#9d887a" stroke-width="1.2"/>
               <line x2="25.5" transform="translate(4 6)" fill="none" stroke="#9d887a" stroke-width="1.2"/>
               <line x2="20.5" transform="translate(9 12)" fill="none" stroke="#9d887a" stroke-width="1.2"/>
             </g>
-          </svg>          
+          </svg>
+          <p class="visually-hidden">Zur Navigation der Seite</p>
         </label> 
         <ul class="socialmedia socialmedia--grid">
           <li class="socialmedia__link">
-            <a href="https://de-de.facebook.com/hsflensburg/" class="socialmedia__link-inner">
+            <a href="https://de-de.facebook.com/hsflensburg/" aria-label="Zu unserer Facebook-Seite" title="Zu unserer Facebook-Seite" class="socialmedia__link-inner">
               <svg width="7" height="14" viewBox="0 0 7 14">
                 <g>
                   <g>
@@ -122,7 +123,7 @@
             </a>
           </li>
           <li class="socialmedia__link">
-            <a href="https://www.instagram.com/hochschuleflensburg/?hl=de" class="socialmedia__link-inner">
+            <a href="https://www.instagram.com/hochschuleflensburg/?hl=de" aria-label="Zu unserer Instagram-Seite" title="Zu unserer Instagram-Seite" class="socialmedia__link-inner">
               <svg width="15.2" height="15.2" viewBox="0 0 15.2 15.2">
                 <g transform="translate(-1.4 -1.4)">
                   <rect width="14" height="14" rx="5" transform="translate(2 2)" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
@@ -134,7 +135,7 @@
             </a>
           </li>
           <li class="socialmedia__link">
-            <a href="tel:012345678" class="socialmedia__link-inner">
+            <a href="tel:012345678" aria-label="Rufen Sie uns an" title="Rufen Sie uns an" class="socialmedia__link-inner">
               <svg width="13.999" height="14" viewBox="0 0 13.999 14">
                 <g transform="translate(-0.01)">
                   <path data-name="Pfad 1" d="M13.979,10.847q-.059-.179-.756-.527-.189-.11-.537-.3t-.631-.348q-.284-.159-.532-.308-.04-.03-.249-.174a2.794,2.794,0,0,0-.353-.214.651.651,0,0,0-.283-.069.825.825,0,0,0-.5.283,4.841,4.841,0,0,0-.547.617,5.994,5.994,0,0,1-.527.616.758.758,0,0,1-.457.283.676.676,0,0,1-.224-.05c-.089-.033-.157-.062-.2-.084s-.126-.07-.238-.139-.176-.108-.189-.114a10.449,10.449,0,0,1-2.337-1.73,10.443,10.443,0,0,1-1.73-2.337q-.01-.02-.114-.189t-.139-.239a2.155,2.155,0,0,1-.084-.2A.673.673,0,0,1,3.3,5.4a.758.758,0,0,1,.283-.457A5.988,5.988,0,0,1,4.2,4.414a4.839,4.839,0,0,0,.616-.547.825.825,0,0,0,.283-.5.649.649,0,0,0-.07-.283,2.764,2.764,0,0,0-.214-.353q-.144-.209-.174-.249-.149-.248-.308-.532t-.348-.631Q3.8.974,3.689.785,3.341.09,3.162.03A.557.557,0,0,0,2.953,0a3.276,3.276,0,0,0-.7.1,3.937,3.937,0,0,0-.681.209A2.665,2.665,0,0,0,.517,1.521,3.855,3.855,0,0,0,.01,3.37a3.84,3.84,0,0,0,.035.522,4.29,4.29,0,0,0,.124.572q.089.318.144.472t.2.552q.149.4.179.487a9.006,9.006,0,0,0,.825,1.74,14.743,14.743,0,0,0,2.143,2.63,14.749,14.749,0,0,0,2.63,2.143,9.02,9.02,0,0,0,1.74.825q.09.03.487.179t.552.2q.154.055.472.144a4.328,4.328,0,0,0,.572.125,3.688,3.688,0,0,0,2.371-.472A2.664,2.664,0,0,0,13.7,12.439a3.916,3.916,0,0,0,.209-.681,3.269,3.269,0,0,0,.1-.7A.554.554,0,0,0,13.979,10.847Z" transform="translate(0 0)" fill="#b3a898"/>
@@ -144,7 +145,7 @@
             </a>
           </li>
           <li class="socialmedia__link">
-            <a href="mailto:diesistkeine@existenteAdresse.com" class="socialmedia__link-inner">
+            <a href="mailto:diesistkeine@existenteAdresse.com" aria-label="Schreiben Sie uns eine Mail" title="Schreiben Sie uns eine Mail" class="socialmedia__link-inner">
               <svg width="16.696" height="13.2" viewBox="0 0 16.696 13.2">
                 <g transform="translate(-1.152 -3.4)">
                   <path d="M3.5,4h12A1.5,1.5,0,0,1,17,5.5v9A1.5,1.5,0,0,1,15.5,16H3.5A1.5,1.5,0,0,1,2,14.5v-9A1.5,1.5,0,0,1,3.5,4Z" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
@@ -394,7 +395,7 @@
             gleichzeitig auch noch etwas Gutes für alle Lebewesen auf unserem Planeten. 
           </p>
         </div>
-        <a href="https://www.instagram.com/?hl=de" class="button">
+        <a href="https://www.instagram.com/?hl=de" aria-label="Teile deine Geschichte mit uns auf Instagram" title="Teile deine Geschichte mit uns auf Instagram" class="button">
           <p class="button__text">Teile deine Geschichte mit uns!</p>
         </a>
       </section>
@@ -422,7 +423,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__wrapper">
-        <a href="#" class="footer__logo">
+        <a href="#" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite" class="footer__logo">
           <svg viewBox="0 0 139.5 33">
             <defs>
                 <style>.cls-1{fill:#f9f7f4;}</style>
@@ -462,21 +463,21 @@
         <nav class="footer__navigation">
           <ul class="footer__navigation-list">
             <li class="footer__navigation-item">
-              <a href="#history" class="footer__navigation-item-link js-link">Geschichte</a>
+              <a href="#history" aria-label="Zur Geschichte" title="Zur Geschichte" class="footer__navigation-item-link js-link">Geschichte</a>
             </li>
             <li class="footer__navigation-item">
-              <a href="#products" class="footer__navigation-item-link js-link">Produkte</a>
+              <a href="#products" aria-label="Zu den Produkten" title="Zu den Produkten" class="footer__navigation-item-link js-link">Produkte</a>
             </li>
             <li class="footer__navigation-item">
-              <a href="#philosophy" class="footer__navigation-item-link js-link">Philosophie</a>
+              <a href="#philosophy" aria-label="Zur Philosophie" title="Zur Philosophie" class="footer__navigation-item-link js-link">Philosophie</a>
             </li>
             <li class="footer__navigation-item">
-              <a href="#contact" class="footer__navigation-item-link">Kontakt</a>
+              <a href="#contact" aria-label="Zum Kontakt" title="Zum Kontakt" class="footer__navigation-item-link">Kontakt</a>
             </li>
           </ul>
           <ul class="socialmedia socialmedia--mobile">
             <li class="socialmedia__link">
-              <a href="https://de-de.facebook.com/hsflensburg/" class="socialmedia__link-inner">
+              <a href="https://de-de.facebook.com/hsflensburg/" aria-label="Zu unserer Facebook-Seite" title="Zu unserer Facebook-Seite" class="socialmedia__link-inner">
                 <svg width="7" height="14" viewBox="0 0 7 14">
                   <g>
                     <g>
@@ -488,7 +489,7 @@
               </a>
             </li>
             <li class="socialmedia__link">
-              <a href="https://www.instagram.com/hochschuleflensburg/?hl=de" class="socialmedia__link-inner">
+              <a href="https://www.instagram.com/hochschuleflensburg/?hl=de" aria-label="Zu unserer Instagram-Seite" title="Zu unserer Instagram-Seite" class="socialmedia__link-inner">
                 <svg width="15.2" height="15.2" viewBox="0 0 15.2 15.2">
                   <g transform="translate(-1.4 -1.4)">
                     <rect width="14" height="14" rx="5" transform="translate(2 2)" fill="none" stroke="#f9f7f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
@@ -500,7 +501,7 @@
               </a>
             </li>
             <li class="socialmedia__link">
-              <a href="tel:012345678" class="socialmedia__link-inner">
+              <a href="tel:012345678" aria-label="Rufen Sie uns an" title="Rufen Sie uns an" class="socialmedia__link-inner">
                 <svg width="13.999" height="14" viewBox="0 0 13.999 14">
                   <g transform="translate(-0.01)">
                     <path data-name="Pfad 1" d="M13.979,10.847q-.059-.179-.756-.527-.189-.11-.537-.3t-.631-.348q-.284-.159-.532-.308-.04-.03-.249-.174a2.794,2.794,0,0,0-.353-.214.651.651,0,0,0-.283-.069.825.825,0,0,0-.5.283,4.841,4.841,0,0,0-.547.617,5.994,5.994,0,0,1-.527.616.758.758,0,0,1-.457.283.676.676,0,0,1-.224-.05c-.089-.033-.157-.062-.2-.084s-.126-.07-.238-.139-.176-.108-.189-.114a10.449,10.449,0,0,1-2.337-1.73,10.443,10.443,0,0,1-1.73-2.337q-.01-.02-.114-.189t-.139-.239a2.155,2.155,0,0,1-.084-.2A.673.673,0,0,1,3.3,5.4a.758.758,0,0,1,.283-.457A5.988,5.988,0,0,1,4.2,4.414a4.839,4.839,0,0,0,.616-.547.825.825,0,0,0,.283-.5.649.649,0,0,0-.07-.283,2.764,2.764,0,0,0-.214-.353q-.144-.209-.174-.249-.149-.248-.308-.532t-.348-.631Q3.8.974,3.689.785,3.341.09,3.162.03A.557.557,0,0,0,2.953,0a3.276,3.276,0,0,0-.7.1,3.937,3.937,0,0,0-.681.209A2.665,2.665,0,0,0,.517,1.521,3.855,3.855,0,0,0,.01,3.37a3.84,3.84,0,0,0,.035.522,4.29,4.29,0,0,0,.124.572q.089.318.144.472t.2.552q.149.4.179.487a9.006,9.006,0,0,0,.825,1.74,14.743,14.743,0,0,0,2.143,2.63,14.749,14.749,0,0,0,2.63,2.143,9.02,9.02,0,0,0,1.74.825q.09.03.487.179t.552.2q.154.055.472.144a4.328,4.328,0,0,0,.572.125,3.688,3.688,0,0,0,2.371-.472A2.664,2.664,0,0,0,13.7,12.439a3.916,3.916,0,0,0,.209-.681,3.269,3.269,0,0,0,.1-.7A.554.554,0,0,0,13.979,10.847Z" transform="translate(0 0)" fill="#f9f7f4"/>
@@ -510,7 +511,7 @@
               </a>
             </li>
             <li class="socialmedia__link">
-              <a href="mailto:diesistkeine@existenteAdresse.com" class="socialmedia__link-inner">
+              <a href="mailto:diesistkeine@existenteAdresse.com" aria-label="Schreiben Sie uns eine Mail" title="Schreiben Sie uns eine Mail" class="socialmedia__link-inner">
                 <svg width="16.696" height="13.2" viewBox="0 0 16.696 13.2">
                   <g transform="translate(-1.152 -3.4)">
                     <path d="M3.5,4h12A1.5,1.5,0,0,1,17,5.5v9A1.5,1.5,0,0,1,15.5,16H3.5A1.5,1.5,0,0,1,2,14.5v-9A1.5,1.5,0,0,1,3.5,4Z" fill="none" stroke="#f9f7f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
