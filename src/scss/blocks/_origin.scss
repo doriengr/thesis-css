@@ -25,6 +25,7 @@
 
 .origin__image {
   grid-column: 1/7;
+  grid-row: 1/2;
   height: $spacing-160;
   margin-bottom: $spacing-25;
   position: relative;
@@ -49,6 +50,7 @@
 
 .origin__description {
   grid-column: 2/8;
+  grid-row: 2/3;
 
   @media (min-width: $screen-large) {
     align-self: center;

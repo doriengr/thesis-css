@@ -59,7 +59,18 @@
   }
 }
 
+.products__category {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  > h3 {
+    grid-row: 2/3;
+  }
+}
+
 .products__image {
+  grid-row: 1/2;
   height: 100%;
   margin-bottom: $spacing-15;
   max-height: $spacing-240;
