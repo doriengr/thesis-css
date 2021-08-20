@@ -55,13 +55,15 @@
 }
 
 @mixin container {
-  display: grid;
-  grid-template-columns: $grid-spacing-outside 20% $grid-spacing-outside 18% $grid-spacing-outside 32% $grid-spacing-outside $grid-spacing-outside;
-  grid-template-rows: auto;
-  max-width: $screen-huger;
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: $grid-spacing-outside 20% $grid-spacing-outside 18% $grid-spacing-outside 32% $grid-spacing-outside $grid-spacing-outside;
+    grid-template-rows: auto;
+    max-width: $screen-huger;
 
-  @media (min-width: $screen-huger) {
-    padding: $spacing-0 $grid-spacing-outside;
+    @media (min-width: $screen-huger) {
+      padding: $spacing-0 $grid-spacing-outside;
+    }
   }
 }
 
