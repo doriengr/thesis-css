@@ -4,42 +4,40 @@
   flex-direction: row;
 }
 
-.line__inner {
-  background-color: $color-red;
-  height: $height-line;
-  width: 100%;
+.line--after {
+  &::before {
+    border-bottom: $height-line solid $color-red;
+    content: '';
+    margin-right: 0.5em;
+    width: 100%;
+  }
 }
 
-.line--hidden {
-  display: block;
-
-  > .line__inner {
+.line--after-hidden {
+  &::after {
     display: none;
-  }
 
-  @media (min-width: $screen-large) {
-    display: flex;
-
-    > .line__inner {
+    @media (min-width: $screen-large) {
       display: block;
     }
   }
 }
 
-.line--grid {
-  @include padding-bottom;
-
-  grid-column: 2/8;
-
-  @media (min-width: $screen-huger) {
-    grid-column: 1/8;
+.line--before {
+  &::before {
+    border-bottom: $height-line solid $color-red;
+    content: '';
+    margin-right: 0.5em;
+    width: 100%;
   }
 }
 
-.line__inner--left {
-  margin-right: $spacing-20;
-}
+.line--before-hidden {
+  &::before {
+    display: none;
 
-.line__inner--right {
-  margin-left: $spacing-20;
+    @media (min-width: $screen-small) {
+      display: block;
+    }
+  }
 }

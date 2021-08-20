@@ -28,7 +28,7 @@
     <!-- header -->
     <header class="header">
       <div class="header__wrapper">
-        <input aria-hidden="true" type="checkbox" id="navigation-open" class="header__input">
+        <input aria-hidden="true" type="checkbox" id="navigation-open" class="visually-hidden">
         <a href="#" class="header__logo">
           <svg class="header__logo-icon" viewBox="0 0 21.74 49">
             <defs>
@@ -60,7 +60,7 @@
             </svg>
           </label>
           <div class="navigation__wrapper">
-            <a href="#" class="navigation__logo-wrapper" aria-label="Zur Startseite">
+            <a href="#" class="navigation__logo-wrapper" aria-label="Zur Startseite" title="Zur Startseite">
               <svg class="navigation__logo" viewBox="0 0 112.55 51.92">
                 <defs>
                     <style>.a{fill:#faf9f7;}</style>
@@ -107,7 +107,7 @@
               <line x2="20.5" transform="translate(9 12)" fill="none" stroke="#9d887a" stroke-width="1.2"/>
             </g>
           </svg>          
-        </label>
+        </label> 
         <ul class="socialmedia socialmedia--grid">
           <li class="socialmedia__link">
             <a href="https://de-de.facebook.com/hsflensburg/" class="socialmedia__link-inner">
@@ -118,6 +118,7 @@
                   </g>
                 </g>
               </svg>
+              <p class="visually-hidden">Besuchen Sie uns auf Facebook</p> 
             </a>
           </li>
           <li class="socialmedia__link">
@@ -129,6 +130,7 @@
                   <line transform="translate(12.527 5.056)" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
                 </g>
               </svg>
+              <p class="visually-hidden">Besuchen Sie uns auf Instagram</p> 
             </a>
           </li>
           <li class="socialmedia__link">
@@ -138,6 +140,7 @@
                   <path data-name="Pfad 1" d="M13.979,10.847q-.059-.179-.756-.527-.189-.11-.537-.3t-.631-.348q-.284-.159-.532-.308-.04-.03-.249-.174a2.794,2.794,0,0,0-.353-.214.651.651,0,0,0-.283-.069.825.825,0,0,0-.5.283,4.841,4.841,0,0,0-.547.617,5.994,5.994,0,0,1-.527.616.758.758,0,0,1-.457.283.676.676,0,0,1-.224-.05c-.089-.033-.157-.062-.2-.084s-.126-.07-.238-.139-.176-.108-.189-.114a10.449,10.449,0,0,1-2.337-1.73,10.443,10.443,0,0,1-1.73-2.337q-.01-.02-.114-.189t-.139-.239a2.155,2.155,0,0,1-.084-.2A.673.673,0,0,1,3.3,5.4a.758.758,0,0,1,.283-.457A5.988,5.988,0,0,1,4.2,4.414a4.839,4.839,0,0,0,.616-.547.825.825,0,0,0,.283-.5.649.649,0,0,0-.07-.283,2.764,2.764,0,0,0-.214-.353q-.144-.209-.174-.249-.149-.248-.308-.532t-.348-.631Q3.8.974,3.689.785,3.341.09,3.162.03A.557.557,0,0,0,2.953,0a3.276,3.276,0,0,0-.7.1,3.937,3.937,0,0,0-.681.209A2.665,2.665,0,0,0,.517,1.521,3.855,3.855,0,0,0,.01,3.37a3.84,3.84,0,0,0,.035.522,4.29,4.29,0,0,0,.124.572q.089.318.144.472t.2.552q.149.4.179.487a9.006,9.006,0,0,0,.825,1.74,14.743,14.743,0,0,0,2.143,2.63,14.749,14.749,0,0,0,2.63,2.143,9.02,9.02,0,0,0,1.74.825q.09.03.487.179t.552.2q.154.055.472.144a4.328,4.328,0,0,0,.572.125,3.688,3.688,0,0,0,2.371-.472A2.664,2.664,0,0,0,13.7,12.439a3.916,3.916,0,0,0,.209-.681,3.269,3.269,0,0,0,.1-.7A.554.554,0,0,0,13.979,10.847Z" transform="translate(0 0)" fill="#b3a898"/>
                 </g>
               </svg>
+              <p class="visually-hidden">Rufen Sie uns an!</p> 
             </a>
           </li>
           <li class="socialmedia__link">
@@ -147,7 +150,8 @@
                   <path d="M3.5,4h12A1.5,1.5,0,0,1,17,5.5v9A1.5,1.5,0,0,1,15.5,16H3.5A1.5,1.5,0,0,1,2,14.5v-9A1.5,1.5,0,0,1,3.5,4Z" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
                   <path d="M17,6,9.5,13,2,6" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
                 </g>
-              </svg>                
+              </svg>     
+              <p class="visually-hidden">Schreiben Sie uns eine Mail!</p>         
             </a>
           </li>
         </ul>
@@ -155,7 +159,12 @@
     </header>
     <main>
       <!-- hero -->
-      <section class="hero">
+      <header class="hero">
+        <h1 class="hero__headline">Veganes Café im Herzen Flensburgs</h1>
+        <span class="hero__date">Est. 2012</span>
+        <p class="hero__description">Entdecke unser vielfältiges Angebot an vegane Backwaren und erlebe Geschmacks&shy;explosionen 
+          aus reinen tierfreien, regionalen Zutaten.</p>
+        <p class="hero__usp">Handarbeit, einzigartige Qualität und erstklassiger Geschmack!</p>
         <picture class="hero__image hero__image--large">
           <source sizes="83px" media="(max-width: 400px)" srcset="src/images/flavour-earth-cafe-w-83.jpg 83w">
           <source sizes="324px" media="(max-width: 700px)" srcset="src/images/flavour-earth-cafe-w-324.jpg 324w">
@@ -167,19 +176,19 @@
           <source sizes="500px" media="(min-width: 700px)" srcset="src/images/flavour-earth-baking-w-500.jpg 500w">
           <img src="src/images/flavour-earth-baking-w-500.jpg" alt="Flavour Eath · Wir backen nur mit den besten Zutaten">
         </picture>
-        <h1 class="hero__headline">Veganes Café im Herzen Flensburgs</h1>
-        <span class="hero__date">Est. 2012</span>
-        <p class="hero__description">Entdecke unser vielfältiges Angebot an vegane Backwaren und erlebe Geschmacks&shy;explosionen 
-          aus reinen tierfreien, regionalen Zutaten.</p>
-          <picture class="hero__image hero__image--hidden">
-            <source sizes="150px" media="(max-width: 1280px)" srcset="src/images/falvour-earth-roll-seletction-w-150.jpg 150w">
-            <source sizes="250px" media="(min-width: 1280px)" srcset="src/images/falvour-earth-roll-seletction-w-250.jpg 250w">
-            <img src="src/images/falvour-earth-roll-seletction-w-250.jpg" alt="Flavour Eath · Unsere Auswahl an Leckereien">
-          </picture>
-        <p class="hero__usp">Handarbeit, einzigartige Qualität und erstklassiger Geschmack!</p>
-      </section>
+        <picture class="hero__image hero__image--hidden">
+          <source sizes="150px" media="(max-width: 1280px)" srcset="src/images/falvour-earth-roll-seletction-w-150.jpg 150w">
+          <source sizes="250px" media="(min-width: 1280px)" srcset="src/images/falvour-earth-roll-seletction-w-250.jpg 250w">
+          <img src="src/images/falvour-earth-roll-seletction-w-250.jpg" alt="Flavour Eath · Unsere Auswahl an Leckereien">
+        </picture>
+      </header>
       <!-- origin of products -->
       <section class="origin">
+        <div class="origin__description">
+          <h2 class="origin__headline">Inspiriert von der Region!</h2>
+          <p>All unsere Produkte werden aus tierfreien und regionalen Produkten hergestellt. Dabei achten wir nicht nur auf kurze Transportwege,
+             sondern auch auf faire Arbeitsbedingungen und Qualität. Somit garantieren wir für unseren einzigartigen Geschmack und Fairness für alle!</p>
+        </div>
         <picture class="origin__image circle circle--after circle--top-right">
           <source sizes="472px" media="(max-width: 500px)" srcset="src/images/flavour-earth-corn-w-472.jpg 472w">
           <source sizes="615px"  media="(max-width: 700px)" srcset="src/images/flavour-earth-corn-w-615.jpg 615w">
@@ -187,21 +196,10 @@
           <source sizes="472px" media="(min-width: 1024px)" srcset="src/images/flavour-earth-corn-w-472.jpg 472w">
           <img class="origin__image-inner" src="src/images/flavour-earth-corn-w-472.jpg" alt="Flavour Eath · Regionales Getreide">
         </picture>
-        <div class="origin__description">
-          <h2 class="origin__headline">Inspiriert von der Region!</h2>
-          <p>All unsere Produkte werden aus tierfreien und regionalen Produkten hergestellt. Dabei achten wir nicht nur auf kurze Transportwege,
-             sondern auch auf faire Arbeitsbedingungen und Qualität. Somit garantieren wir für unseren einzigartigen Geschmack und Fairness für alle!</p>
-          <a href="https://www.instagram.com/?hl=de" class="button">
-            <p class="button__text">Unsere Geschichte</p>
-          </a>
-        </div>
       </section>
       <!-- history -->
       <section id="history" class="history">
-        <div class="line line--grid line--hidden">
-          <div class="line__inner line__inner--left"></div>
-          <h2 class="history__headline">Unsere Geschichte</h2>
-        </div>
+        <h2 class="history__headline line line--before line--before-hidden">Unsere Geschichte</h2>
         <picture class="history__image history__image--large">
           <source sizes="180px" media="(max-width: 700px)" srcset="src/images/flavour-earth-history-alma-w-180.jpg 180w">
           <source sizes="420px" media="(min-width: 700px)" srcset="src/images/flavour-earth-history-alma-w-420.jpg 420w">
@@ -247,11 +245,7 @@
             <h3>Brot & Brötchen</h3>
             <ul class="products__list">
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item1-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item1-open" class="products__list-label">Brot</label>
-                  <div class="line__inner line__inner--right"></div>    
-                </div>
+                <h4 class="products__list-label">Brot</h4>
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Bauenbrot</li>
                   <li class="products__sublist-item">Dinkel-Vollkorn Brot</li>
@@ -263,11 +257,7 @@
                 </ul>
               </li>
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item2-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item2-open" class="products__list-label">Brötchen</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Brötchen</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Bauernbrötchen</li>
                   <li class="products__sublist-item">Dinkel-Vollkorn Brötchen</li>
@@ -293,11 +283,7 @@
             <h3>Alles Süße</h3>
             <ul class="products__list">
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item3-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item3-open" class="products__list-label">Kuchen</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Kuchen</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Schokokuchen mit Blaubeeren</li>
                   <li class="products__sublist-item">Mohnkuchen</li>
@@ -307,11 +293,7 @@
                 </ul>
               </li>
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item4-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item4-open" class="products__list-label">Gebäck & Muffins</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Gebäck & Muffins</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Hefeknoten mit Zimt-Nuss</li>
                   <li class="products__sublist-item">Franzbrötchen</li>
@@ -340,11 +322,7 @@
             <h3>Durstlöscher</h3>
             <ul class="products__list">
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item5-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item5-open" class="products__list-label">Heißgetränke</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Heißgetränke</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Espresso</li>
                   <li class="products__sublist-item">Cappuccino</li>
@@ -356,11 +334,7 @@
                 </ul>
               </li>
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item6-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item6-open" class="products__list-label">Kaltgetränke</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Kaltgetränke</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Karaffe Wasser</li>
                   <li class="products__sublist-item">Ice Tea</li>
@@ -368,11 +342,7 @@
                 </ul>
               </li>
               <li class="products__list-item">
-                <input aria-hidden="true" type="checkbox" id="products-list-item7-open" class="products__list-input">
-                <div class="line line--hidden">
-                  <label aria-hidden="true" for="products-list-item7-open" class="products__list-label">Smoothies</label>
-                  <div class="line__inner line__inner--right"></div>
-                </div>
+                <h4 class="products__list-label">Smoothies</h4>  
                 <ul class="products__sublist">
                   <li class="products__sublist-item">Erdbeeren-Banane-Kiwi</li>
                   <li class="products__sublist-item">Apfel-Drachenfrucht-Kokos</li>
@@ -395,9 +365,8 @@
             „Mein Schlüsselmoment war, als ich mit 16 zufällig eine Dokumentation über Massentierhaltung von Kühen und Hühnern im Fernsehen gesehen habe. Mir ist sofort bewusst 
             geworden, dass ich so eine Haltung gegenüber Tieren nicht unterstützen möchte.“
           </blockquote>
-          <figcaption class="quote__caption line">
-            <p class="quote__caption-inner">Alma, Geschäftsführerin</p>
-            <div class="line__inner line__inner--right"></div>
+          <figcaption class="quote__caption">
+            <p class="quote__caption-inner line line--before">Alma, Geschäftsführerin</p>
           </figcaption>
         </figure>
         <div class="philosophy__text philosophy__text--light">

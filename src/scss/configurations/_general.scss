@@ -27,16 +27,6 @@ main {
   }
 }
 
-header {
-  background-color: rgba($color-extra-light, 0.8);
-  left: $spacing-0;
-  position: fixed;
-  right: $spacing-0;
-  top: $spacing-0;
-  width: 100vw;
-  z-index: $z-index-high;
-}
-
 footer {
   color: $color-extra-light;
   position: relative;
@@ -106,6 +96,16 @@ h3 {
   }
 }
 
+h4 {
+  @include font-montserrat;
+
+  color: $color-red;
+  display: block;
+  font-size: $font-size-small;
+  white-space: nowrap;
+  width: 100%;
+}
+
 a {
   color: $color-dark;
   text-decoration: none;
@@ -127,4 +127,14 @@ img {
 
 ::selection {
   background-color: $color-light;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

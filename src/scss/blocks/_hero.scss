@@ -50,6 +50,7 @@
 
 .hero__image--large {
   grid-column: 1/3;
+  grid-row: 1/2;
 
   @media (min-width: $screen-small) {
     grid-row: 1/4;
