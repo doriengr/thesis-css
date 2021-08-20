@@ -26,9 +26,6 @@
 }
 
 .navigation__close {
-  @include transition;
-
-  cursor: pointer;
   display: flex;
   justify-content: flex-end;
   margin-top: $spacing-15;
@@ -58,9 +55,6 @@
 }
 
 .navigation__logo-wrapper {
-  @include transition;
-
-  cursor: pointer;
   display: block;
   left: $spacing-0;
   margin-bottom: $spacing-50;
@@ -101,10 +95,7 @@
   width: 100%;
 
   > .navigation__list-item > a {
-    @include transition;
-
     color: $color-extra-light;
-    cursor: pointer;
     display: block;
     margin-bottom: $spacing-20;
     text-transform: lowercase;

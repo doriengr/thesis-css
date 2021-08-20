@@ -30,10 +30,7 @@
 }
 
 .header__logo {
-  @include transition;
-
   align-items: center;
-  cursor: pointer;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -76,10 +73,6 @@
 }
 
 .header__navigation-button {
-  @include transition;
-
-  cursor: pointer;
-
   &:hover {
     opacity: $opacity-hover;
   }

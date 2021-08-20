@@ -106,9 +106,27 @@ h4 {
   width: 100%;
 }
 
-a {
+a,
+button,
+label {
+  @include transition;
+
   color: $color-dark;
+  cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:focus {
+    color: $color-brown;
+    outline-color: $color-green;
+  }
+
+  &:active {
+    color: $color-light;
+  }
 }
 
 span {

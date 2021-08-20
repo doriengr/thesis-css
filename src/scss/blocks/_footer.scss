@@ -41,8 +41,6 @@
 }
 
 .footer__logo {
-  @include transition();
-
   display: block;
   width: $spacing-120;
 
@@ -108,7 +106,6 @@
 .footer__navigation-item-link {
   color: $color-extra-light;
   display: block;
-  transition: $transition-type $transition-duration $transition-function;
 
   &:hover {
     color: $color-dark;

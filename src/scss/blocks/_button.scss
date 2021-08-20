@@ -1,6 +1,4 @@
 .button {
-  @include transition;
-
   background-color: $color-extra-light;
   border: 1px solid $color-brown;
   color: $color-green;

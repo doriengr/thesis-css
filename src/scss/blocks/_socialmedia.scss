@@ -21,17 +21,17 @@
 }
 
 .socialmedia__link {
+  margin: $spacing-0 $spacing-10;
+}
+
+.socialmedia__link-inner {
   @include transition;
 
-  margin: $spacing-0 $spacing-10;
+  display: block;
+  height: $spacing-15;
 
   &:hover {
     opacity: $opacity-hover;
     transform: scale($transform-scale);
   }
-}
-
-.socialmedia__link-inner {
-  display: block;
-  height: $spacing-15;
 }
