@@ -114,6 +114,10 @@
   }
 }
 
+.products__list-item--hidden {
+  display: none;
+}
+
 .products__list-label {
   position: relative;
 
@@ -143,6 +147,12 @@
       transform: none;
       width: 100%;
     }
+  }
+}
+
+.products__list-label--rotate {
+  &::after {
+    transform: rotate(0deg);
   }
 }
 
