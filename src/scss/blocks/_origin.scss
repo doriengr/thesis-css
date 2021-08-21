@@ -15,8 +15,6 @@
   }
 
   @media (min-width: $screen-large) {
-    margin-top: $spacing-0;
-
     &::after {
       height: 40%;
     }

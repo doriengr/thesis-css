@@ -6,13 +6,9 @@ body {
   background-color: $color-extra-light;
   color: $color-dark;
   font-family: $font-family-standard;
-  font-size: $font-size-mobile;
+  font-size: $font-size-base;
   letter-spacing: $letter-spacing-standard;
   line-height: $line-height-standard;
-
-  @media (min-width: $screen-larger) {
-    font-size: $font-size-desktop;
-  }
 }
 
 main {
