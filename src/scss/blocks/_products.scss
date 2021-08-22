@@ -109,6 +109,7 @@
 
   @media (min-width: $screen-large) {
     border: $spacing-0;
+    cursor: text;
     margin-bottom: $spacing-40;
     padding: $spacing-0;
   }
@@ -116,6 +117,10 @@
 
 .products__list-item--hidden {
   display: none;
+
+  @media (min-width: $screen-large) {
+    display: block;
+  }
 }
 
 .products__list-label {
