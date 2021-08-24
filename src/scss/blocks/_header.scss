@@ -2,12 +2,18 @@
   background-color: rgba($color-extra-light, 0.8);
   display: block;
   left: $spacing-0;
+  margin: 0 auto;
+  max-width: $screen-huger;
   padding: $spacing-0 $grid-spacing-outside;
   position: fixed;
   right: $spacing-0;
   top: $spacing-0;
   width: 100vw;
   z-index: $z-index-high;
+
+  @media (min-width: $screen-huger) {
+    padding: $spacing-0 $grid-spacing-outside;
+  }
 }
 
 .header__wrapper {

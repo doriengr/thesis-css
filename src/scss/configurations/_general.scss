@@ -9,6 +9,12 @@ body {
   font-size: $font-size-base;
   letter-spacing: $letter-spacing-standard;
   line-height: $line-height-standard;
+  margin: 0 auto;
+  max-width: $screen-huger;
+
+  @media (min-width: $screen-huger) {
+    padding: $spacing-0 $grid-spacing-outside;
+  }
 }
 
 main {
