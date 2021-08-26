@@ -8,7 +8,6 @@
   position: fixed;
   right: $spacing-0;
   top: $spacing-0;
-  width: 100vw;
   z-index: $z-index-high;
 
   @media (min-width: $screen-huger) {
@@ -70,6 +69,7 @@
   color: $color-green;
   font-size: $font-size-smallest;
   font-weight: 500;
+  margin: $spacing-0;
 
   @media (min-width: $screen-large) {
     font-size: $font-size-smaller;

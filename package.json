@@ -20,16 +20,16 @@
     "js-compress": "minify src/js/* > build/site.js"
   },
   "dependencies": {
-    "minireset.css": "0.0.7",
     "node-sass": "^6.0.1",
+    "normalize-scss": "^7.0.1",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "purgecss": "^4.0.3"
   },
   "devDependencies": {
     "minify": "^7.0.2",
-    "npm-run-all": "^4.1.5",
     "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
     "serve": "^12.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",

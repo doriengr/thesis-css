@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'at-rule-no-unknown': null,
     'selector-class-pattern': null,
-    'selector-max-id': 10,
-    'max-nesting-depth': 4,
+    'selector-max-id': 1,
+    'max-nesting-depth': 3,
   }
 }
