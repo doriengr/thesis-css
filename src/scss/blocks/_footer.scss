@@ -5,27 +5,27 @@
   padding-top: $spacing-20;
 
   &::before {
-    background-image: url('/src/images/pattern-small.svg');
-    background-repeat: no-repeat;
+    background-image: url('/src/images/icon-corn-green.svg');
+    background-repeat: repeat-x;
+    background-size: $spacing-25;
     content: '';
     height: 100%;
+    opacity: 40%;
     position: absolute;
-    top: -$spacing-20;
+    top: -2rem;
     width: 100%;
     z-index: $z-index-lowest;
   }
 
-  @media (min-width: $screen-small) {
-    padding-top: $spacing-40;
-  }
-
   @media (min-width: $screen-large) {
+    padding-top: $spacing-50;
+
     &::before {
-      background-image: url('/src/images/pattern-large.svg');
+      background-repeat: repeat;
       max-width: $max-width-880;
       right: $spacing-0;
       top: $spacing-0;
-      width: 85%;
+      width: 95%;
     }
   }
 }
@@ -74,6 +74,7 @@
   font-size: $font-size-smaller;
   gap: $spacing-20 $spacing-15;
   grid-template-columns: 1fr 1fr;
+  list-style-type: none;
   margin-top: $spacing-25;
   text-transform: lowercase;
 
