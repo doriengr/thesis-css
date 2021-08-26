@@ -9,7 +9,7 @@
     "url": "git+https://github.com/doriengr/thesis-css.git"
   },
   "scripts": {
-    "build": "npm-run-all css-lint css-compile",
+    "build": "npm-run-all css-lint css-compile js-compress",
     "css-lint": "stylelint src/scss/",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 src/scss -o build",
     "css-purge": "purgecss --keyframes --css build/styles.css --content index.html src/js/*.js --output build",
@@ -20,15 +20,15 @@
     "js-compress": "minify src/js/* > build/site.js"
   },
   "dependencies": {
-    "minify": "^7.0.2",
     "minireset.css": "0.0.7",
     "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "purgecss": "^4.0.3"
   },
   "devDependencies": {
+    "minify": "^7.0.2",
+    "npm-run-all": "^4.1.5",
     "nodemon": "^2.0.12",
     "serve": "^12.0.0",
     "stylelint": "^13.13.1",
