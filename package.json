@@ -12,16 +12,14 @@
     "build": "npm-run-all css-lint css-compile",
     "css-lint": "stylelint src/scss/",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 src/scss -o build",
-    "css-prefix": "postcss --replace build/styles.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css build/styles.css --content index.html src/js/*.js --output build",
     "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,css -x \"npm run build\"",
-    "production": "npm run css-compile && npm run css-purge && npm run css-prefix",
+    "production": "npm run css-compile && npm run css-purge",
     "js-compress": "minify src/js/* > build/site.js"
   },
   "dependencies": {
-    "autoprefixer": "^10.3.1",
     "minify": "^7.0.2",
     "minireset.css": "0.0.7",
     "node-sass": "^6.0.1",
