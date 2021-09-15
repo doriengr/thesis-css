@@ -1,10 +1,10 @@
 .sectionline {
-  @include container;
   @include spacing;
+
+  padding: 0 $grid-spacing-outside;
 }
 
 .sectionline__inner {
   background-color: $color-red;
-  grid-column: 2/8;
   width: 100%;
 }

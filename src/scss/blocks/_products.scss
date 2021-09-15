@@ -1,5 +1,4 @@
 .products {
-  @include container;
   @include spacing;
 
   position: relative;
@@ -12,7 +11,7 @@
       grid-row: 2/3;
       height: 20%;
       position: absolute;
-      top: 7.5%;
+      top: 9%;
       width: 100%;
       z-index: $z-index-lowest;
     }
@@ -20,16 +19,16 @@
 }
 
 .products__headline {
-  grid-column: 2/8;
+  padding: 0 $grid-spacing-outside;
   text-align: center;
 }
 
 .products__wrapper {
   display: grid;
   gap: $spacing-25 $spacing-0;
-  grid-column: 2/8;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  padding: 0 $grid-spacing-outside;
 
   @media (min-width: $screen-large) {
     > li:nth-of-type(2) .products__image {

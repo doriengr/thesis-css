@@ -1,10 +1,12 @@
 .contact {
-  @include container;
   @include spacing;
+
+  > .quote {
+    padding: 0 $grid-spacing-outside;
+  }
 }
 
-.contact__image {
-  grid-column: 1/-1;
+.contact__image img {
   height: $spacing-160;
 
   @media (min-width: $screen-small) {
