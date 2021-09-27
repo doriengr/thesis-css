@@ -11,15 +11,16 @@
 - Präprozessor: SASS
 - Codequalität mit Stylelint
 - Purge von CSS mithilfe von PurgeCSS
-- Automatisches Anhängen von CSS-Präfixen mithilfe von PostCSS
 
 ## Verwendete Abhängigkeiten für Funktionen
 
-- Nodemon: Automatisches starten der Applikation 
-- Minirest: Reset der User-Agent-Stylesheets
-- Npm Run All: Auführen mehrerer Skripte gleichzeitig
-- Serve: Starten eines lokalen Servers
-- Stylelint-Config: Laden der Stylint Config Standard Datei
+- minfy
+- nodemon
+- npm-run-all
+- serve
+- stylelint
+- stylelint-config-sass-guidelines
+- stylelint-config-standard
 
 
 -- Umsetzung findet im Rahmen der Thesis von Dorien Grönwald statt --
