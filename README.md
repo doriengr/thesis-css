@@ -14,6 +14,11 @@
 
 ## Verwendete Abhängigkeiten für Funktionen
 
+- node-sass
+- normalize-scss
+- postcss
+- postcss-cli
+- purgecss
 - minfy
 - nodemon
 - npm-run-all
@@ -21,7 +26,6 @@
 - stylelint
 - stylelint-config-sass-guidelines
 - stylelint-config-standard
-
 
 -- Umsetzung findet im Rahmen der Thesis von Dorien Grönwald statt --
 
